@@ -418,7 +418,7 @@
           "en": "Advanced KPI visualization and business insights"
         }
       ],
-      "github": "https://github.com/pascal-eloumou/dallosh-analysis",
+      "github": "https://github.com/aurelehawk",
       "image": "dallosh_preview.png"
     },
     {
@@ -465,7 +465,7 @@
           "en": "Data security through cryptography"
         }
       ],
-      "github": "https://github.com/pascal-eloumou/race-analyzer",
+      "github": "https://github.com/aurelehawk",
       "image": "race_analyzer_preview.png"
     },
     {
@@ -512,7 +512,7 @@
           "en": "Cloud cost optimization"
         }
       ],
-      "github": "https://github.com/pascal-eloumou/finops-kubernetes",
+      "github": "https://github.com/aurelehawk",
       "image": "finops_k8s_preview.png"
     }
   ],

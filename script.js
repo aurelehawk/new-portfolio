@@ -170,26 +170,26 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `,
         
-        softskill: (skill) => `
+        softskill: (item, lang) => `
             <div class="softskill-item" data-aos="fade-right">
                 <i class="fas fa-check-circle"></i>
-                <span>${skill}</span>
+                <span>${item[lang]}</span>
             </div>
         `,
         
-        language: (lang, langData) => `
+        language: (item, lang) => `
             <div class="language-item" data-aos="fade-up">
-                <i class="${langData.icon}"></i>
+                <i class="${item.icon}"></i>
                 <div class="language-info">
-                    <h4>${langData.name[lang]}</h4>
-                    <p>${langData.level[lang]}</p>
+                    <h4>${item.name[lang]}</h4>
+                    <p>${item.level[lang]}</p>
                 </div>
             </div>
         `
     };
 
     // ============================================================================
-    // SECTION CONFIGURATION - DRY Principle (Don't Repeat Yourself)
+    // SECTION CONFIGURATION - DRY Principle (Don\'t Repeat Yourself)
     // ============================================================================
     const sectionConfig = {
         skills: {
@@ -221,14 +221,14 @@ document.addEventListener("DOMContentLoaded", () => {
         softskills: {
             containerId: 'softskills-list',
             dataKey: 'softskills',
-            template: (item, lang) => templates.softskill(item[lang]),
-            isArray: true
+            template: templates.softskill,
+            dataItemsKey: 'items' // Specify that the items are in a nested 'items' array
         },
         languages: {
             containerId: 'languages-list',
             dataKey: 'languages',
             template: templates.language,
-            isArray: true
+            dataItemsKey: 'items' // Specify that the items are in a nested 'items' array
         }
     };
 
@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const container = document.getElementById(config.containerId);
             if (!container) return;
 
-            const data = state.portfolioData[config.dataKey];
+            let data = state.portfolioData[config.dataKey];
             if (!data) return;
 
             container.innerHTML = '';
@@ -275,8 +275,8 @@ document.addEventListener("DOMContentLoaded", () => {
             let items;
             if (config.isObject) {
                 items = Object.values(data);
-            } else if (config.isArray) {
-                items = data.items || [];
+            } else if (config.dataItemsKey) {
+                items = data[config.dataItemsKey] || [];
             } else {
                 items = data;
             }
