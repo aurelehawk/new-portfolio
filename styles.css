@@ -116,6 +116,33 @@ nav {
     width: 100%;
 }
 
+/* Language Toggle */
+.language-toggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-btn.active {
+    background: var(--primary-gradient);
+    color: white;
+    border-color: transparent;
+}
+
+.lang-btn:not(.active):hover {
+    background: var(--bg-card);
+    color: white;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
