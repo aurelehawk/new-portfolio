@@ -1,13 +1,16 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Lance le workflow à chaque push sur la branche "main"
   push:
     branches: [ "main" ]
-  # Vous permet de lancer ce workflow manuellement depuis l'onglet Actions
   workflow_dispatch:
 
-# Autorise un seul déploiement concurrentiel à la fois
+# AJOUTEZ CETTE SECTION : Donne les permissions au workflow
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -26,7 +29,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Charger le contenu depuis la racine du dépôt
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
