@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
     // ============================================================================
-    // STATE MANAGEMENT - Single source of truth
+    // STATE MANAGEMENT
     // ============================================================================
     const state = {
-        currentLang: "en", // Default to English
+        currentLang: "fr", // J'ai mis le français par défaut pour ton portfolio
         currentTheme: localStorage.getItem('theme') || 'light',
         portfolioData: {},
         mobileMenuOpen: false
     };
 
     // ============================================================================
-    // STATIC TRANSLATIONS - For UI elements not in JSON
+    // STATIC TRANSLATIONS
+    // J'ai corrigé les apostrophes en utilisant des guillemets doubles ""
     // ============================================================================
     const staticTranslations = {
         'nav.home': { fr: 'Accueil', en: 'Home' },
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'certifications.title': { fr: 'Certifications', en: 'Certifications' },
         'certifications.subtitle': { fr: 'Expertise reconnue en plateformes data et machine learning', en: 'Recognized expertise in data platforms and machine learning' },
         'softskills.title': { fr: 'Savoir-être Professionnel', en: 'Professional Skills' },
-        'softskills.subtitle': { fr: 'Au-delà de l\'expertise technique', en: 'Beyond technical expertise' },
+        'softskills.subtitle': { fr: "Au-delà de l'expertise technique", en: 'Beyond technical expertise' },
         'languages.title': { fr: 'Langues', en: 'Languages' },
         'contact.title': { fr: 'Contactez-moi', en: 'Get in Touch' },
         'contact.intro': { fr: 'Ouvert aux opportunités CDI, consulting et freelance', en: 'Open to permanent positions, consulting and freelance opportunities' },
@@ -50,13 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
             en: 'Pascal Aurèle Eloumou - Data Engineer | GenAI | Snowflake | Dataiku Expert'
         },
         'meta.description': {
-            fr: 'Pascal Aurèle Eloumou - Data Engineer & Analyst avec 10+ ans d\'expérience. Expert en migration Cloud (Snowflake/GCP), Pipelines ETL, Machine Learning (NLP) et développement Fullstack AppData (Next.js, Python).',
+            fr: "Pascal Aurèle Eloumou - Data Engineer & Analyst avec 10+ ans d'expérience. Expert en migration Cloud (Snowflake/GCP), Pipelines ETL, Machine Learning (NLP) et développement Fullstack AppData (Next.js, Python).",
             en: 'Pascal Aurèle Eloumou - Data Engineer & Analyst with 10+ years experience. Expert in Cloud migration (Snowflake/GCP), ETL Pipelines, Machine Learning (NLP) and Fullstack DataApp development (Next.js, Python).'
         }
     };
 
     // ============================================================================
-    // TEMPLATES - Reusable HTML generation (Single Responsibility Principle)
+    // TEMPLATES
     // ============================================================================
     const templates = {
         skill: (category, lang) => `
@@ -133,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="project-card" data-aos="fade-up">
                 ${proj.image ? `
                     <div class="project-image">
-                        <img src="${proj.image}" alt="${proj.title[lang]} preview" loading="lazy">
+                        <img src="${proj.image}" alt="${proj.title[lang]} preview" loading="lazy" onerror="this.style.display='none'">
                         <div class="project-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -162,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         certification: (cert, lang) => `
             <div class="certification-card" data-aos="zoom-in">
-                ${cert.logo ? `<div class="certification-logo"><img src="${cert.logo}" alt="${cert.issuer} Logo" loading="lazy"></div>` : ''}
+                ${cert.logo ? `<div class="certification-logo"><img src="${cert.logo}" alt="${cert.issuer} Logo" loading="lazy" onerror="this.style.display='none'"></div>` : ''}
                 <div class="certification-details">
                     <h3>${cert.name[lang]}</h3>
                     <p><i class="fas fa-certificate"></i> ${cert.issuer} - ${cert.year}</p>
@@ -189,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // ============================================================================
-    // SECTION CONFIGURATION - DRY Principle (Don\'t Repeat Yourself)
+    // SECTION CONFIGURATION
     // ============================================================================
     const sectionConfig = {
         skills: {
@@ -222,45 +223,57 @@ document.addEventListener("DOMContentLoaded", () => {
             containerId: 'softskills-list',
             dataKey: 'softskills',
             template: templates.softskill,
-            dataItemsKey: 'items' // Specify that the items are in a nested 'items' array
+            dataItemsKey: 'items'
         },
         languages: {
             containerId: 'languages-list',
             dataKey: 'languages',
             template: templates.language,
-            dataItemsKey: 'items' // Specify that the items are in a nested 'items' array
+            dataItemsKey: 'items'
         }
     };
 
     // ============================================================================
-    // DATA MANAGER - Handles data loading
+    // DATA MANAGER
     // ============================================================================
     const dataManager = {
         async load() {
             try {
-                const response = await fetch('data/portfolio-data.json');
+                // Tentative de chargement : cherche d'abord dans /data/, sinon à la racine
+                let response;
+                try {
+                    response = await fetch('data/portfolio-data.json');
+                    if (!response.ok) throw new Error("Not in data folder");
+                } catch (e) {
+                    // Fallback: Si le dossier 'data' n'existe pas, on cherche à la racine
+                    console.log("Tentative de chargement depuis la racine...");
+                    response = await fetch('portfolio-data.json');
+                }
+
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 state.portfolioData = await response.json();
                 return true;
             } catch (error) {
                 console.error('Failed to load portfolio data:', error);
-                this.showError();
+                this.showError(error.message);
                 return false;
             }
         },
         
-        showError() {
+        showError(details) {
             document.body.innerHTML += `
                 <div class="error-message">
                     <i class="fas fa-exclamation-triangle"></i>
-                    <p>Failed to load portfolio data. Please refresh the page.</p>
+                    <p>Impossible de charger les données du portfolio.</p>
+                    <p style="font-size: 0.8rem; opacity: 0.8">Erreur: ${details}</p>
+                    <p style="font-size: 0.8rem">Vérifiez que le fichier portfolio-data.json est bien présent.</p>
                 </div>
             `;
         }
     };
 
     // ============================================================================
-    // UI MANAGER - Handles all UI updates
+    // UI MANAGER
     // ============================================================================
     const uiManager = {
         renderSection(config) {
@@ -304,12 +317,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else if (el.tagName === 'TITLE') {
                         el.textContent = translation;
                     } else {
-                        const textNode = Array.from(el.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
-                        if (textNode) {
-                            textNode.nodeValue = translation;
-                        } else {
-                            el.textContent = translation;
-                        }
+                        // Safe text update preserving HTML comments if any
+                         const textNode = Array.from(el.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+                         if (textNode) {
+                             textNode.nodeValue = translation;
+                         } else {
+                             el.textContent = translation;
+                         }
                     }
                 }
             });
@@ -325,8 +339,20 @@ document.addEventListener("DOMContentLoaded", () => {
             this.setElementText('[data-key="profile.tagline"]', profile.tagline[state.currentLang]);
             this.setElementText('[data-key="profile.description"]', profile.description[state.currentLang]);
             this.setElementText('[data-key="profile.about"]', profile.about[state.currentLang]);
-            this.setElementText('[data-key="profile.email"]', profile.email);
-            this.setElementText('[data-key="profile.phone"]', profile.phone);
+            
+            // Gestion des liens email et téléphone
+            const emailEl = document.querySelector('a[data-key="profile.email"]');
+            if(emailEl) {
+                emailEl.textContent = profile.email;
+                emailEl.href = `mailto:${profile.email}`;
+            }
+
+            const phoneEl = document.querySelector('a[data-key="profile.phone"]');
+            if(phoneEl) {
+                phoneEl.textContent = profile.phone;
+                phoneEl.href = `tel:${profile.phone.replace(/\s/g, '')}`;
+            }
+
             this.setElementText('[data-key="profile.location"]', profile.location[state.currentLang]);
             this.setElementText('[data-key="profile.availability"]', profile.availability[state.currentLang]);
 
@@ -334,6 +360,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (profile.photo && profilePhoto) {
                 profilePhoto.src = profile.photo;
                 profilePhoto.alt = profile.name;
+                // Si l'image ne charge pas, on met un placeholder
+                profilePhoto.onerror = function() { 
+                    this.style.display = 'none'; 
+                };
             }
         },
 
@@ -360,7 +390,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // ============================================================================
-    // THEME MANAGER - Handles dark/light theme
+    // THEME MANAGER
     // ============================================================================
     const themeManager = {
         init() {
@@ -388,7 +418,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // ============================================================================
-    // PRINT MANAGER - Handles PDF export/print
+    // PRINT MANAGER
     // ============================================================================
     const printManager = {
         print() {
@@ -397,7 +427,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // ============================================================================
-    // NAVIGATION MANAGER - Handles smooth scrolling and mobile menu
+    // NAVIGATION MANAGER
     // ============================================================================
     const navigationManager = {
         init() {
@@ -440,7 +470,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 closeMenu.addEventListener('click', () => this.closeMobileMenu());
             }
             
-            // Close menu when clicking outside
             document.addEventListener('click', (e) => {
                 if (state.mobileMenuOpen && 
                     !nav.contains(e.target) && 
@@ -493,7 +522,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // ============================================================================
-    // EVENT MANAGER - Centralized event handling
+    // EVENT MANAGER
     // ============================================================================
     const eventManager = {
         init() {
@@ -532,37 +561,31 @@ document.addEventListener("DOMContentLoaded", () => {
                 const profile = state.portfolioData.profile;
                 if (profile?.cv_file) {
                     window.open(profile.cv_file, '_blank');
+                } else {
+                    alert("CV non disponible pour le moment");
                 }
             });
         }
     };
 
     // ============================================================================
-    // INITIALIZATION - Application entry point
+    // INITIALIZATION
     // ============================================================================
     async function init() {
-        // Show loading state
         document.body.classList.add('loading');
         
-        // Initialize theme first (for instant theme application)
         themeManager.init();
         
-        // Load data
         const dataLoaded = await dataManager.load();
         
         if (dataLoaded) {
-            // Initialize all managers
             eventManager.init();
             navigationManager.init();
-            
-            // Update UI
             uiManager.updateAll();
         }
         
-        // Remove loading state
         document.body.classList.remove('loading');
     }
 
-    // Start the application
     init();
 });
