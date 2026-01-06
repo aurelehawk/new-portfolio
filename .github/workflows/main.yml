@@ -1,25 +1,33 @@
-name: Deploy GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
+  # Lance le workflow à chaque push sur la branche "main"
   push:
-    branches:
-      - main # or master
+    branches: [ "main" ]
+  # Vous permet de lancer ce workflow manuellement depuis l'onglet Actions
+  workflow_dispatch:
+
+# Autorise un seul déploiement concurrentiel à la fois
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './pascal-eloumou-portfolio' # Spécifie le dossier à déployer
-
+          # Charger le contenu depuis la racine du dépôt
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
