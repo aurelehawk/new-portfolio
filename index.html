@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-translate="meta.title">Pascal Aurèle Eloumou - Data Engineer | GenAI | Snowflake | Dataiku Expert</title>
-    <meta name="description" content="Pascal Aurèle Eloumou - Data Engineer & Analyst. Expert en migration Cloud (Snowflake/GCP), Pipelines ETL, Machine Learning (NLP) et développement Fullstack AppData (Next.js, Python)." data-translate="meta.description">
-    <meta name="keywords" content="Pascal Aurèle Eloumou, Data Engineer, Data Analyst, GenAI, NLP, LLM, Python, Dataiku, Snowflake, Power BI, RabbitMQ, Next.js, ETL, ELT, Big Data, Cloud Computing, Google Cloud Platform, Machine Learning, MLOps">
+    <meta name="description" content="Pascal Aurèle Eloumou - Data Engineer & Analyst with 10+ years experience. Expert in Cloud migration (Snowflake/GCP), ETL Pipelines, Machine Learning (NLP) and Fullstack DataApp development (Next.js, Python)." data-translate="meta.description">
+    <meta name="keywords" content="Pascal Aurèle Eloumou, Data Engineer, Data Analyst, GenAI, NLP, LLM, Python, Dataiku, Snowflake, Power BI, RabbitMQ, Next.js, ETL, ELT, Big Data, Cloud Computing, Google Cloud Platform, Machine Learning, MLOps, Freelance, Consulting, CDI">
     <meta name="author" content="Pascal Aurele Eloumou">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -18,92 +18,187 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
         <div class="nav-container">
-            <div class="logo">Pascal Aurèle Eloumou</div>
+            <div class="nav-header">
+                <div class="logo">Pascal Aurèle E.</div>
+                <button class="close-menu" id="close-menu" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
             <ul class="nav-links">
-                <li><a href="#accueil" data-translate="nav.home">Accueil</a></li>
-                <li><a href="#competences" data-translate="nav.skills">Compétences</a></li>
-                <li><a href="#projects" data-translate="nav.projects">Projets</a></li>
-                <li><a href="#experience" data-translate="nav.experience">Expérience</a></li>
-                <li><a href="#formation" data-translate="nav.education">Formation</a></li>
+                <li><a href="#accueil" data-translate="nav.home">Home</a></li>
+                <li><a href="#about" data-translate="nav.about">About</a></li>
+                <li><a href="#competences" data-translate="nav.skills">Skills</a></li>
+                <li><a href="#projects" data-translate="nav.projects">Projects</a></li>
+                <li><a href="#experience" data-translate="nav.experience">Experience</a></li>
+                <li><a href="#formation" data-translate="nav.education">Education</a></li>
+                <li><a href="#certifications" data-translate="nav.certifications">Certifications</a></li>
                 <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
             </ul>
-            <div class="language-toggle">
-                <button id="lang-fr" class="lang-btn active">FR</button>
-                <button id="lang-en" class="lang-btn">EN</button>
+            <div class="nav-controls">
+                <div class="language-toggle">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <button id="lang-fr" class="lang-btn">FR</button>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="print-btn" id="print-btn" aria-label="Print or export PDF">
+                    <i class="fas fa-download"></i>
+                </button>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header id="accueil" class="hero">
         <div class="hero-content">
             <div class="hero-text">
+                <div class="hero-tagline" data-key="profile.tagline"></div>
                 <h1 data-key="profile.title"></h1> 
                 <p class="description" data-key="profile.description"></p>
+                <div class="availability-badge" data-key="profile.availability"></div>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary" data-translate="hero.projects_button">
-                        <i class="fas fa-code"></i> Voir mes projets
+                        <i class="fas fa-code"></i> View my projects
                     </a>
                     <a href="#contact" class="btn btn-secondary" data-translate="hero.contact_button">
-                        <i class="fas fa-envelope"></i> Me contacter
+                        <i class="fas fa-envelope"></i> Contact me
+                    </a>
+                    <a href="#" class="btn btn-outline" id="download-cv" data-translate="hero.download_cv">
+                        <i class="fas fa-file-pdf"></i> Download CV
                     </a>
                 </div>
             </div>
             <div class="hero-image">
                 <img src="" alt="Pascal Aurèle Eloumou" id="profile-photo">
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label" data-translate="hero.years_exp">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label" data-translate="hero.certifications">Certifications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label" data-translate="hero.projects_completed">Projects</div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
+        <!-- About Section -->
         <section id="about">
-            <h2 class="section-title" data-translate="about.title">À Propos</h2>
-            <p data-key="profile.about"></p>
+            <div class="section-header">
+                <h2 class="section-title" data-translate="about.title">About Me</h2>
+                <div class="section-subtitle" data-translate="about.subtitle">Passionate about transforming data into strategic insights</div>
+            </div>
+            <div class="about-content">
+                <p data-key="profile.about"></p>
+            </div>
         </section>
 
+        <!-- Skills Section -->
         <section id="competences">
-            <h2 class="section-title" data-translate="skills.title">Stack Technique</h2>
-            <div class="skills-container" id="skills-list">
-                </div>
+            <div class="section-header">
+                <h2 class="section-title" data-translate="skills.title">Technical Stack</h2>
+                <div class="section-subtitle" data-translate="skills.subtitle">Comprehensive expertise across the data value chain</div>
+            </div>
+            <div class="skills-container" id="skills-list"></div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects">
-            <h2 class="section-title" data-translate="projects.title">Projets Innovants</h2>
-            <div class="projects-container" id="projects-list">
-                </div>
+            <div class="section-header">
+                <h2 class="section-title" data-translate="projects.title">Innovative Projects</h2>
+                <div class="section-subtitle" data-translate="projects.subtitle">Real-world solutions combining AI, data engineering and cloud architecture</div>
+            </div>
+            <div class="projects-container" id="projects-list"></div>
         </section>
 
+        <!-- Experience Section -->
         <section id="experience">
-            <h2 class="section-title" data-translate="experience.title">Parcours Professionnel</h2>
-            <div class="experience-container" id="experience-list">
-                </div>
+            <div class="section-header">
+                <h2 class="section-title" data-translate="experience.title">Professional Journey</h2>
+                <div class="section-subtitle" data-translate="experience.subtitle">10+ years delivering data-driven business impact</div>
+            </div>
+            <div class="experience-container" id="experience-list"></div>
         </section>
 
+        <!-- Certifications Section -->
         <section id="certifications">
-            <h2 class="section-title" data-translate="certifications.title">Certifications</h2>
-            <div class="certifications-container" id="certifications-list">
-                </div>
+            <div class="section-header">
+                <h2 class="section-title" data-translate="certifications.title">Certifications</h2>
+                <div class="section-subtitle" data-translate="certifications.subtitle">Recognized expertise in data platforms and machine learning</div>
+            </div>
+            <div class="certifications-container" id="certifications-list"></div>
         </section>
 
+        <!-- Education Section -->
         <section id="formation">
-            <h2 class="section-title" data-translate="education.title">Formation Académique</h2>
-            <div class="experience-container" id="education-list">
-                </div>
+            <div class="section-header">
+                <h2 class="section-title" data-translate="education.title">Academic Background</h2>
+                <div class="section-subtitle" data-translate="education.subtitle">Strong foundation in data science and artificial intelligence</div>
+            </div>
+            <div class="experience-container" id="education-list"></div>
+        </section>
+
+        <!-- Soft Skills Section -->
+        <section id="softskills">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="softskills.title">Professional Skills</h2>
+                <div class="section-subtitle" data-translate="softskills.subtitle">Beyond technical expertise</div>
+            </div>
+            <div class="softskills-container" id="softskills-list"></div>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="languages.title">Languages</h2>
+            </div>
+            <div class="languages-container" id="languages-list"></div>
         </section>
     </main>
 
+    <!-- Footer / Contact -->
     <footer id="contact">
-        <h2 class="section-title" data-translate="contact.title">Contactez-moi</h2>
+        <h2 class="section-title" data-translate="contact.title">Get in Touch</h2>
+        <p class="contact-intro" data-translate="contact.intro">Open to permanent positions, consulting and freelance opportunities</p>
         <div class="contact-container">
-             <p><a href="mailto:eloumou86@gmail.com" data-key="profile.email"></a></p>
-             <p><a href="tel:+33610436635" data-key="profile.phone"></a></p>
+             <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:eloumou86@gmail.com" data-key="profile.email"></a>
+             </div>
+             <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+33610436635" data-key="profile.phone"></a>
+             </div>
+             <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-key="profile.location"></span>
+             </div>
         </div>
         <div class="social-links">
-            <a href="https://linkedin.com/in/pascal-eloumou" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/pascal-eloumou" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/pascal-eloumou" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/pascal-eloumou" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
-        <p class="copyright" data-translate="footer.copyright">&copy; 2025 Pascal Aurèle ELOUMOU. Tous droits réservés.</p>
+        <p class="copyright" data-translate="footer.copyright">&copy; 2025 Pascal Aurèle ELOUMOU. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
