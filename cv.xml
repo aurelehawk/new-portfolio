@@ -1,0 +1,170 @@
+<resume language="fr-FR" template="modern_tech_senior">
+    <header>
+        <fullname>Pascal Aurèle ELOUMOU</fullname>
+        <title>ANALYTICS &amp; DATA ENGINEER (GCP &amp; SNOWFLAKE)</title>
+        <experience_level>+10 ans d'expérience</experience_level>
+        <contact_info>
+            <email>votre.eloumou@gmail.com</email>
+            <phone>+33 6 10 43 66 35</phone>
+            <linkedin>linkedin.com/in/aureleloumou</linkedin>
+            <github>github.com/aurelehawk</github>
+            <location>Paris, France</location>
+        </contact_info>
+    </header>
+
+    <summary>
+        Expert Data Engineering spécialisé sur les écosystèmes GCP et Snowflake. Je conçois et industrialise des architectures de données modernes (ELT) robustes et scalables. Maîtrisant l'orchestration complexe (Airflow/Composer) et la transformation (dbt), j'applique les principes DataOps et d'optimisation continue (FinOps) pour garantir la fiabilité et la performance des pipelines de données à grande échelle. Expert technique orienté métier, j'accompagne la valorisation de la donnée, de l'ingestion brute jusqu'à l'IA.
+    </summary>
+
+    <skills_section>
+        <skill_category name="Cloud &amp; Data Platforms">
+            <skill>GCP (BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM)</skill>
+            <skill>Snowflake (Snowpipe, Time Travel, Zero-Copy Cloning)</skill>
+            <skill>AWS (S3, Lambda)</skill>
+        </skill_category>
+        
+        <skill_category name="Orchestration &amp; Engineering">
+            <skill>Cloud Composer (Managed Airflow) &amp; DAGs complexes</skill>
+            <skill>dbt (Data Build Tool) - Modélisation &amp; Tests</skill>
+            <skill>Talend</skill>
+            <skill>Ingestion Batch &amp; Streaming (SFTP, API, Kafka)</skill>
+        </skill_category>
+
+        <skill_category name="Langages &amp; Scripting">
+            <skill>SQL Expert (Window Functions, CTEs, Optimization)</skill>
+            <skill>Python (Pandas, Polars, Scripting)</skill>
+            <skill>Bash / Shell</skill>
+            <skill>JavaScript (Notions)</skill>
+        </skill_category>
+
+        <skill_category name="DataOps &amp; Infrastructure">
+            <skill>CI/CD (GitLab CI, GitHub Actions)</skill>
+            <skill>Docker &amp; Kubernetes (K8s)</skill>
+            <skill>Data Quality &amp; Observabilité</skill>
+            <skill>FinOps (Optimisation des coûts Cloud)</skill>
+        </skill_category>
+
+        <skill_category name="BI &amp; Data Science">
+            <skill>Power BI, Looker Studio</skill>
+            <skill>Dataiku DSS (Expert)</skill>
+            <skill>Machine Learning (Random Forest, NLP)</skill>
+        </skill_category>
+    </skills_section>
+
+    <experience_section>
+        <job>
+            <role>Analyste et Data Engineer</role>
+            <company>Manpower</company>
+            <period>2024 – 2025</period>
+            <description>Migration d'une architecture Legacy vers la Modern Data Stack (Snowflake) et développement de produits de données avancés.</description>
+            <achievements>
+                <item>Conduite de la migration des flux ETL Alteryx vers une architecture native Snowflake (ELT), améliorant la performance et la maintenabilité.</item>
+                <item>Développement de "DataApps" interactives (Streamlit) et intégration de modules NLP pour l'analyse de sentiment (scoring qualitatif) et quantitatif (NTSCORE).</item>
+                <item>Optimisation des modèles budgétaires et ciblage marketing via des algorithmes prédictifs.</item>
+                <item>Gouvernance des données : Gestion stricte des flux sensibles (RGPD, Données Bancaires &amp; RH).</item>
+            </achievements>
+            <stack>Python, Snowflake, SQL, dbt, Streamlit, Power BI, Alteryx.</stack>
+        </job>
+
+        <job>
+            <role>Data Engineer / Data Analyst (GCP)</role>
+            <company>Carrefour Administratif France</company>
+            <period>2023 – 2024</period>
+            <description>Optimisation des pipelines fiscaux critiques et automatisation des traitements financiers sur Google Cloud Platform.</description>
+            <achievements>
+                <item>Architecture &amp; Orchestration : Automatisation des pipelines via Cloud Composer (Airflow) et Cloud Functions pour le traitement idempotent des fichiers.</item>
+                <item>BigQuery Engineering : Centralisation des données financières, mise en place de stratégies de Partitionnement/Clustering pour réduire les coûts de scan (FinOps).</item>
+                <item>Gain de productivité : Réduction du temps de traitement de 4h à quelques minutes via l'automatisation de tâches manuelles.</item>
+                <item>Mise en place de monitoring, alerting et procédures de reprise automatique (Backfill) sur les flux critiques.</item>
+            </achievements>
+            <stack>GCP (BigQuery, GCS, Composer), Python, SQL, Looker Studio, Docker, GitLab CI/CD.</stack>
+        </job>
+
+        <job>
+            <role>Data Analyst</role>
+            <company>Eneo The Energy of Cameroun</company>
+            <period>2021 – 2023</period>
+            <description>Pilotage de la performance opérationnelle et lutte contre la fraude via l'analyse de données CRM.</description>
+            <achievements>
+                <item>Analyse des données Salesforce pour corréler l'alignement des ressources RH avec la Qualité de Service (QoS).</item>
+                <item>Détection de fraudes et réduction des pertes non-techniques via le croisement de données de comptage (Pré/Post-paiement).</item>
+            </achievements>
+            <stack>Python, Power BI, Salesforce, SQL.</stack>
+        </job>
+
+        <job>
+            <role>Expert Data Analyst &amp; IoT (Dataiku)</role>
+            <company>Vinci Construction / NGE</company>
+            <period>2015 – 2021</period>
+            <description>Maintenance prédictive et gestion de flotte connectée (IoT) à grande échelle.</description>
+            <achievements>
+                <item>Industrialisation des flux IoT (OBD, CANBUS) et données externes (Météo, SAP) via Dataiku DSS.</item>
+                <item>Développement de modèles de Machine Learning (Random Forest) pour la maintenance prédictive des engins.</item>
+                <item>Calcul de rentabilité en temps réel (coûts km/heure) pour le pilotage stratégique du matériel.</item>
+            </achievements>
+            <stack>Dataiku DSS, Python, SQL, PostgreSQL, Power BI, IoT.</stack>
+        </job>
+    </experience_section>
+
+    <projects_section>
+        <project>
+            <name>Projet FinOps Kubernetes (Airbnb Clone)</name>
+            <description>Transformation d'une application monolithique en architecture micro-services conteneurisée. Implémentation de Kubecost et Prometheus pour le monitoring des coûts et des ressources.</description>
+            <tech>Kubernetes, Docker, Grafana, Kubecost.</tech>
+        </project>
+        <project>
+            <name>Analyseur de Courses IA (GenAI)</name>
+            <description>Application d'analyse vidéo en temps réel exploitant les capacités multimodales de Google Gemini 2.0 Flash.</description>
+            <tech>Python, Streamlit, OpenCV, Gemini API.</tech>
+        </project>
+        <project>
+            <name>Dallosh Analysis (NLP Pipeline)</name>
+            <description>Architecture orientée messages pour le traitement automatisé des réclamations clients (Analyse de sentiment).</description>
+            <tech>Python, RabbitMQ, Celery, Ollama (LLM local), MongoDB.</tech>
+        </project>
+    </projects_section>
+
+    <education_section>
+        <degree>
+            <title>Master 2 Data &amp; IA</title>
+            <school>HETIC Paris</school>
+            <year>2024</year>
+        </degree>
+        <degree>
+            <title>Master 1 Digital and Data Science</title>
+            <school>ESLSCA Paris</school>
+            <year>2023</year>
+        </degree>
+        <degree>
+            <title>Licence Pro Transport &amp; Logistique</title>
+            <school>Université de Douala</school>
+            <year>2021</year>
+        </degree>
+        <degree>
+            <title>Licence Pro Système et Réseau</title>
+            <school>Institut Africain de l'Informatique</school>
+            <year>2011</year>
+        </degree>
+    </education_section>
+
+    <certifications>
+        <cert>Dataiku MLOps Practitioner (2025)</cert>
+        <cert>Dataiku Machine Learning Practitioner (2024)</cert>
+        <cert>Dataiku Advanced Core Designer (2024)</cert>
+        <cert>Dataiku Core Designer (2024)</cert>
+        
+    </certifications>
+
+    <misc_section>
+        <languages>
+            <lang level="C1 (Expérimenté)">Anglais</lang>
+            <lang level="Langue maternelle">Français</lang>
+        </languages>
+        <soft_skills>
+            <skill>Autonomie &amp; Initiative</skill>
+            <skill>Vision Business / Métier</skill>
+            <skill>Pédagogie &amp; Transmission</skill>
+            <skill>Gestion de projet Agile</skill>
+        </soft_skills>
+    </misc_section>
+</resume>
