@@ -419,7 +419,7 @@
         }
       ],
       "github": "https://github.com/aurelehawk",
-      "image": "dallosh_preview.png"
+      "image": "data/dallosh_preview.png"
     },
     {
       "id": "proj_video_analyzer",
@@ -466,7 +466,7 @@
         }
       ],
       "github": "https://github.com/aurelehawk",
-      "image": "race_analyzer_preview.png"
+      "image": "data/race_analyzer_preview.png"
     },
     {
       "id": "proj_finops_k8s",
@@ -513,7 +513,7 @@
         }
       ],
       "github": "https://github.com/aurelehawk",
-      "image": "finops_k8s_preview.png"
+      "image": "data/finops_k8s_preview.png"
     }
   ],
   "certifications": [
