@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
         'contact.intro': { fr: 'Ouvert aux opportunités CDI, consulting et freelance', en: 'Open to permanent positions, consulting and freelance opportunities' },
         'footer.copyright': { fr: '© 2025 Pascal Aurèle ELOUMOU. Tous droits réservés.', en: '© 2025 Pascal Aurèle ELOUMOU. All rights reserved.' },
         'meta.title': { 
-            fr: 'Pascal Aurèle Eloumou - Data Engineer | GenAI | Snowflake | Expert Dataiku',
-            en: 'Pascal Aurèle Eloumou - Data Engineer | GenAI | Snowflake | Dataiku Expert'
+            fr: 'Pascal Aurèle Eloumou - Analytics & Data Engineer (GCP & Snowflake)',
+            en: 'Pascal Aurèle Eloumou - Analytics & Data Engineer (GCP & Snowflake)'
         },
         'meta.description': {
-            fr: "Pascal Aurèle Eloumou - Data Engineer & Analyst avec 10+ ans d'expérience. Expert en migration Cloud (Snowflake/GCP), Pipelines ETL, Machine Learning (NLP) et développement Fullstack AppData (Next.js, Python).",
-            en: 'Pascal Aurèle Eloumou - Data Engineer & Analyst with 10+ years experience. Expert in Cloud migration (Snowflake/GCP), ETL Pipelines, Machine Learning (NLP) and Fullstack DataApp development (Next.js, Python).'
+            fr: "Pascal Aurèle Eloumou - Analytics & Data Engineer avec 10+ ans d'expérience. Expert GCP & Snowflake, architectures de données modernes (ELT), orchestration (Airflow/Composer, dbt), DataOps & FinOps.",
+            en: 'Pascal Aurèle Eloumou - Analytics & Data Engineer with 10+ years experience. Expert in GCP & Snowflake, modern data architectures (ELT), orchestration (Airflow/Composer, dbt), DataOps & FinOps.'
         }
     };
 

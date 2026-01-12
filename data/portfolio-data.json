@@ -2,20 +2,20 @@
   "profile": {
     "name": "Pascal Aurèle ELOUMOU",
     "title": {
-      "fr": "Data Engineer | Data Analyst | Expert Dataiku & Cloud",
-      "en": "Data Engineer | Data Analyst | Dataiku & Cloud Expert"
+      "fr": "Analytics & Data Engineer (GCP & Snowflake)",
+      "en": "Analytics & Data Engineer (GCP & Snowflake)"
     },
     "tagline": {
-      "fr": "10+ ans d'expérience • Spécialiste Migration Cloud & IA Générative",
-      "en": "10+ years experience • Cloud Migration & Generative AI Specialist"
+      "fr": "10+ ans d'expérience • Expert GCP & Snowflake • DataOps & FinOps",
+      "en": "10+ years experience • GCP & Snowflake Expert • DataOps & FinOps"
     },
     "description": {
-      "fr": "Expert Data avec plus de 10 ans d'expérience, spécialisé dans la migration Cloud (Snowflake/GCP), l'ingénierie des données et le Machine Learning. Je transforme des données brutes en leviers de performance stratégique via l'automatisation ETL et l'IA générative.",
-      "en": "Data expert with over 10 years of experience, specializing in Cloud migration (Snowflake/GCP), data engineering, and Machine Learning. I transform raw data into strategic performance levers through ETL automation and generative AI."
+      "fr": "Expert Data Engineering spécialisé sur les écosystèmes GCP et Snowflake. Je conçois et industrialise des architectures de données modernes (ELT) robustes et scalables. Maîtrisant l'orchestration complexe (Airflow/Composer) et la transformation (dbt), j'applique les principes DataOps et d'optimisation continue (FinOps) pour garantir la fiabilité et la performance des pipelines de données à grande échelle.",
+      "en": "Expert Data Engineering specialized in GCP and Snowflake ecosystems. I design and industrialize modern (ELT) data architectures that are robust and scalable. Mastering complex orchestration (Airflow/Composer) and transformation (dbt), I apply DataOps principles and continuous optimization (FinOps) to ensure reliability and performance of large-scale data pipelines."
     },
     "about": {
-      "fr": "Passionné par l'intelligence artificielle et l'architecture de données, je maîtrise la chaîne de valeur complète : de l'ingestion de données critiques (ETL/ELT) à la modélisation prédictive (Random Forest, NLP). Mon expertise couvre les environnements Cloud (GCP, Azure, Snowflake) et le Low-Code (Dataiku, Alteryx). Avec une compréhension fine des enjeux métiers, j'accompagne la transformation digitale des organisations en accélérant la valorisation des données et l'innovation. Je recherche des missions en CDI, consulting ou freelance pour déployer des solutions innovantes alliant technique et impact métier.",
-      "en": "Passionate about artificial intelligence and data architecture, I master the complete value chain: from critical data ingestion (ETL/ELT) to predictive modeling (Random Forest, NLP). My expertise covers Cloud environments (GCP, Azure, Snowflake) and Low-Code platforms (Dataiku, Alteryx). With a deep understanding of business challenges, I support digital transformation by accelerating data valorization and innovation. I am seeking CDI, consulting, or freelance opportunities to deploy innovative solutions that combine technical expertise and business impact."
+      "fr": "Expert technique orienté métier, j'accompagne la valorisation de la donnée, de l'ingestion brute jusqu'à l'IA. Spécialisé dans la conception d'architectures ELT modernes sur GCP et Snowflake, je maîtrise l'orchestration complexe avec Cloud Composer (Airflow), la transformation de données avec dbt, et l'optimisation des coûts Cloud (FinOps). Mon expertise couvre également l'ingestion Batch & Streaming (SFTP, API, Kafka), le DataOps avec CI/CD (GitLab, GitHub Actions), et la Business Intelligence (Power BI, Looker Studio). Avec une compréhension fine des enjeux métiers, je transforme les données en leviers de performance stratégique. Je recherche des missions en CDI, consulting ou freelance pour déployer des solutions innovantes alliant technique et impact métier.",
+      "en": "Business-oriented technical expert, I support data valorization from raw ingestion to AI. Specialized in designing modern ELT architectures on GCP and Snowflake, I master complex orchestration with Cloud Composer (Airflow), data transformation with dbt, and Cloud cost optimization (FinOps). My expertise also covers Batch & Streaming ingestion (SFTP, API, Kafka), DataOps with CI/CD (GitLab, GitHub Actions), and Business Intelligence (Power BI, Looker Studio). With a deep understanding of business challenges, I transform data into strategic performance levers. I am seeking CDI, consulting, or freelance opportunities to deploy innovative solutions that combine technical expertise and business impact."
     },
     "photo": "data/profile-photo-aurele.jpeg",
     "cv_file": "cv-pascal-eloumou.pdf",
@@ -67,7 +67,7 @@
           "en": "50% reduction in fraud-related penalties. Optimization of HR KPIs for hiring workflows. Temporal analysis of agency KPIs with automated recommendations."
         }
       },
-      "stack": ["Snowflake", "Python", "Streamlit", "Alteryx", "SQL", "NLP", "Power BI", "Excel VBA"]
+      "stack": ["Python", "Snowflake", "SQL", "dbt", "Streamlit", "Power BI", "Alteryx"]
     },
     {
       "id": "exp_2",
@@ -100,7 +100,7 @@
           "en": "Major productivity gain: processing equivalent to 6 people/6 days reduced to 4 hours of automated processing. Significant reduction in eco-contribution penalty risks."
         }
       },
-      "stack": ["GCP", "BigQuery", "Cloud Functions", "Python", "Airflow", "Looker Studio", "SQL", "JavaScript", "Docker", "GitLab CI/CD"]
+      "stack": ["GCP", "BigQuery", "GCS", "Cloud Composer", "Python", "SQL", "Looker Studio", "Docker", "GitLab CI/CD"]
     },
     {
       "id": "exp_3",
@@ -133,7 +133,7 @@
           "en": "Significant improvement in service quality. Reduction of non-technical losses. Optimization of prepayment/postpayment economic model."
         }
       },
-      "stack": ["Power BI", "Python", "Salesforce", "Scrum", "Jira", "Excel VBA", "SQL"]
+      "stack": ["Python", "Power BI", "Salesforce", "SQL"]
     },
     {
       "id": "exp_4",
@@ -166,7 +166,7 @@
           "en": "Equipment availability: 81-92% in 6 months. Reduction of breakdown detection time from 5 to 1 day. 12 breakdowns avoided monthly. Reduction of lost hours from 240 to 80 per month."
         }
       },
-      "stack": ["Python", "Dataiku DSS", "Power BI", "SQL", "PostgreSQL", "Machine Learning", "IoT", "Random Forest", "CAT VisionLink"]
+      "stack": ["Dataiku DSS", "Python", "SQL", "PostgreSQL", "Power BI", "IoT"]
     },
     {
       "id": "exp_5",
@@ -273,46 +273,64 @@
     }
   ],
   "skills": {
-    "languages": {
-      "title": {
-        "fr": "Langages de Programmation",
-        "en": "Programming Languages"
-      },
-      "items": [
-        {"name": "Python", "level": 95, "icon": "fab fa-python", "details": {"fr": "Pandas, Numpy, Celery, PyTorch, Scikit-learn, TensorFlow, Streamlit", "en": "Pandas, Numpy, Celery, PyTorch, Scikit-learn, TensorFlow, Streamlit"}},
-        {"name": "SQL", "level": 95, "icon": "fas fa-database", "details": {"fr": "BigQuery, Snowflake SQL, PostgreSQL, MySQL, SQL Server", "en": "BigQuery, Snowflake SQL, PostgreSQL, MySQL, SQL Server"}},
-        {"name": "JavaScript/TypeScript", "level": 85, "icon": "fab fa-js", "details": {"fr": "React 19, Next.js 16, Express.js, Node.js", "en": "React 19, Next.js 16, Express.js, Node.js"}},
-        {"name": "Bash / PowerShell", "level": 75, "icon": "fas fa-terminal", "details": {"fr": "Scripting système et automatisation", "en": "System scripting and automation"}},
-        {"name": "VBA", "level": 80, "icon": "fas fa-file-excel", "details": {"fr": "Automatisation Excel avancée", "en": "Advanced Excel automation"}},
-        {"name": "R", "level": 70, "icon": "fab fa-r-project", "details": {"fr": "Analyse statistique", "en": "Statistical analysis"}}
-      ]
-    },
-    "data_engineering": {
-      "title": {
-        "fr": "Data Engineering & ETL",
-        "en": "Data Engineering & ETL"
-      },
-      "items": [
-        {"name": "Snowflake", "level": 90, "icon": "fas fa-snowflake", "details": {"fr": "Architecture native, Snowpark, Data Warehouse", "en": "Native architecture, Snowpark, Data Warehouse"}},
-        {"name": "GCP", "level": 85, "icon": "fab fa-google", "details": {"fr": "BigQuery, Cloud Functions, Cloud Composer, Dataflow", "en": "BigQuery, Cloud Functions, Cloud Composer, Dataflow"}},
-        {"name": "Airflow", "level": 85, "icon": "fas fa-wind", "details": {"fr": "Orchestration de pipelines ETL/ELT", "en": "ETL/ELT pipeline orchestration"}},
-        {"name": "Dataiku DSS", "level": 95, "icon": "fas fa-cogs", "details": {"fr": "4 certifications, Expert recipes & ML", "en": "4 certifications, Expert recipes & ML"}},
-        {"name": "Alteryx", "level": 85, "icon": "fas fa-project-diagram", "details": {"fr": "Workflows ETL et automatisation", "en": "ETL workflows and automation"}},
-        {"name": "Message Brokering", "level": 85, "icon": "fas fa-exchange-alt", "details": {"fr": "RabbitMQ (AMQP), Kafka", "en": "RabbitMQ (AMQP), Kafka"}},
-        {"name": "Docker / K8s", "level": 80, "icon": "fab fa-docker", "details": {"fr": "Containerisation et orchestration", "en": "Containerization and orchestration"}}
-      ]
-    },
     "cloud_platforms": {
       "title": {
-        "fr": "Plateformes Cloud & DevOps",
-        "en": "Cloud Platforms & DevOps"
+        "fr": "Cloud & Plateformes Data",
+        "en": "Cloud & Data Platforms"
       },
       "items": [
-        {"name": "Google Cloud Platform", "level": 85, "icon": "fab fa-google", "details": {"fr": "BigQuery, Cloud Functions, Composer", "en": "BigQuery, Cloud Functions, Composer"}},
-        {"name": "Azure", "level": 75, "icon": "fab fa-microsoft", "details": {"fr": "Data Factory, Azure SQL", "en": "Data Factory, Azure SQL"}},
-        {"name": "AWS", "level": 70, "icon": "fab fa-aws", "details": {"fr": "S3, Lambda, Redshift", "en": "S3, Lambda, Redshift"}},
-        {"name": "GitLab CI/CD", "level": 80, "icon": "fab fa-gitlab", "details": {"fr": "Intégration et déploiement continu", "en": "Continuous integration and deployment"}},
-        {"name": "Kubernetes", "level": 80, "icon": "fas fa-dharmachakra", "details": {"fr": "Orchestration de conteneurs", "en": "Container orchestration"}}
+        {"name": "GCP", "level": 90, "icon": "fab fa-google", "details": {"fr": "BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM", "en": "BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM"}},
+        {"name": "Snowflake", "level": 95, "icon": "fas fa-snowflake", "details": {"fr": "Snowpipe, Time Travel, Zero-Copy Cloning, Data Warehouse", "en": "Snowpipe, Time Travel, Zero-Copy Cloning, Data Warehouse"}},
+        {"name": "AWS", "level": 75, "icon": "fab fa-aws", "details": {"fr": "S3, Lambda", "en": "S3, Lambda"}}
+      ]
+    },
+    "orchestration": {
+      "title": {
+        "fr": "Orchestration & Engineering",
+        "en": "Orchestration & Engineering"
+      },
+      "items": [
+        {"name": "Cloud Composer", "level": 90, "icon": "fas fa-wind", "details": {"fr": "Managed Airflow & DAGs complexes", "en": "Managed Airflow & complex DAGs"}},
+        {"name": "dbt", "level": 85, "icon": "fas fa-database", "details": {"fr": "Data Build Tool - Modélisation & Tests", "en": "Data Build Tool - Modeling & Tests"}},
+        {"name": "Talend", "level": 80, "icon": "fas fa-project-diagram", "details": {"fr": "ETL/ELT workflows", "en": "ETL/ELT workflows"}},
+        {"name": "Airflow", "level": 85, "icon": "fas fa-wind", "details": {"fr": "Orchestration de pipelines ETL/ELT", "en": "ETL/ELT pipeline orchestration"}},
+        {"name": "Ingestion", "level": 90, "icon": "fas fa-exchange-alt", "details": {"fr": "Batch & Streaming (SFTP, API, Kafka)", "en": "Batch & Streaming (SFTP, API, Kafka)"}}
+      ]
+    },
+    "languages": {
+      "title": {
+        "fr": "Langages & Scripting",
+        "en": "Languages & Scripting"
+      },
+      "items": [
+        {"name": "SQL", "level": 95, "icon": "fas fa-database", "details": {"fr": "Expert (Window Functions, CTEs, Optimization)", "en": "Expert (Window Functions, CTEs, Optimization)"}},
+        {"name": "Python", "level": 95, "icon": "fab fa-python", "details": {"fr": "Pandas, Polars, Scripting, Celery, Streamlit", "en": "Pandas, Polars, Scripting, Celery, Streamlit"}},
+        {"name": "Bash / Shell", "level": 85, "icon": "fas fa-terminal", "details": {"fr": "Scripting système et automatisation", "en": "System scripting and automation"}},
+        {"name": "JavaScript", "level": 75, "icon": "fab fa-js", "details": {"fr": "Notions", "en": "Basics"}}
+      ]
+    },
+    "dataops": {
+      "title": {
+        "fr": "DataOps & Infrastructure",
+        "en": "DataOps & Infrastructure"
+      },
+      "items": [
+        {"name": "CI/CD", "level": 85, "icon": "fab fa-gitlab", "details": {"fr": "GitLab CI, GitHub Actions", "en": "GitLab CI, GitHub Actions"}},
+        {"name": "Docker & Kubernetes", "level": 85, "icon": "fab fa-docker", "details": {"fr": "Containerisation et orchestration K8s", "en": "Containerization and K8s orchestration"}},
+        {"name": "Data Quality", "level": 85, "icon": "fas fa-shield-alt", "details": {"fr": "Observabilité et qualité des données", "en": "Data observability and quality"}},
+        {"name": "FinOps", "level": 85, "icon": "fas fa-chart-line", "details": {"fr": "Optimisation des coûts Cloud", "en": "Cloud cost optimization"}}
+      ]
+    },
+    "bi_datascience": {
+      "title": {
+        "fr": "BI & Data Science",
+        "en": "BI & Data Science"
+      },
+      "items": [
+        {"name": "Power BI", "level": 90, "icon": "fas fa-chart-bar", "details": {"fr": "Desktop, Server, Cloud, DAX/M", "en": "Desktop, Server, Cloud, DAX/M"}},
+        {"name": "Looker Studio", "level": 85, "icon": "fas fa-chart-line", "details": {"fr": "Dashboards dynamiques et KPI", "en": "Dynamic dashboards and KPIs"}},
+        {"name": "Dataiku DSS", "level": 95, "icon": "fas fa-cogs", "details": {"fr": "Expert - 4 certifications", "en": "Expert - 4 certifications"}},
+        {"name": "Machine Learning", "level": 90, "icon": "fas fa-brain", "details": {"fr": "Random Forest, NLP", "en": "Random Forest, NLP"}}
       ]
     },
     "databases": {
@@ -321,49 +339,10 @@
         "en": "Databases"
       },
       "items": [
-        {"name": "Snowflake", "level": 90, "icon": "fas fa-snowflake"},
+        {"name": "Snowflake", "level": 95, "icon": "fas fa-snowflake"},
         {"name": "BigQuery", "level": 90, "icon": "fab fa-google"},
         {"name": "PostgreSQL", "level": 85, "icon": "fas fa-database"},
-        {"name": "MongoDB", "level": 80, "icon": "fas fa-leaf"},
-        {"name": "MySQL / MariaDB", "level": 85, "icon": "fas fa-database"},
-        {"name": "SQL Server", "level": 80, "icon": "fas fa-server"}
-      ]
-    },
-    "business_intelligence": {
-      "title": {
-        "fr": "Business Intelligence & Visualisation",
-        "en": "Business Intelligence & Visualization"
-      },
-      "items": [
-        {"name": "Power BI", "level": 90, "icon": "fas fa-chart-bar", "details": {"fr": "Desktop, Server, Cloud, DAX/M", "en": "Desktop, Server, Cloud, DAX/M"}},
-        {"name": "Looker Studio", "level": 85, "icon": "fas fa-chart-line", "details": {"fr": "Dashboards dynamiques et KPI", "en": "Dynamic dashboards and KPIs"}},
-        {"name": "Tableau", "level": 75, "icon": "fas fa-chart-pie"},
-        {"name": "Excel Avancé", "level": 90, "icon": "fas fa-file-excel", "details": {"fr": "TCD, GCD, VBA, Power Query", "en": "Pivot Tables, Solver, VBA, Power Query"}}
-      ]
-    },
-    "machine_learning": {
-      "title": {
-        "fr": "Machine Learning & IA",
-        "en": "Machine Learning & AI"
-      },
-      "items": [
-        {"name": "Scikit-learn", "level": 90, "icon": "fas fa-brain", "details": {"fr": "Random Forest, Gradient Boosting, Classification", "en": "Random Forest, Gradient Boosting, Classification"}},
-        {"name": "TensorFlow / PyTorch", "level": 80, "icon": "fas fa-robot", "details": {"fr": "Deep Learning et réseaux de neurones", "en": "Deep Learning and neural networks"}},
-        {"name": "NLP", "level": 85, "icon": "fas fa-language", "details": {"fr": "Analyse de sentiment, Topic extraction", "en": "Sentiment analysis, Topic extraction"}},
-        {"name": "LLM / GenAI", "level": 85, "icon": "fas fa-magic", "details": {"fr": "Ollama, Fine-tuning, Prompt Engineering", "en": "Ollama, Fine-tuning, Prompt Engineering"}},
-        {"name": "Dataiku ML", "level": 95, "icon": "fas fa-cogs", "details": {"fr": "AutoML, MLOps, Model deployment", "en": "AutoML, MLOps, Model deployment"}}
-      ]
-    },
-    "methodologies": {
-      "title": {
-        "fr": "Méthodologies & Outils",
-        "en": "Methodologies & Tools"
-      },
-      "items": [
-        {"name": "Agile / Scrum", "level": 90, "icon": "fas fa-sync-alt"},
-        {"name": "Jira / Confluence", "level": 85, "icon": "fab fa-jira"},
-        {"name": "Git / GitHub", "level": 85, "icon": "fab fa-git-alt"},
-        {"name": "RGPD / Data Governance", "level": 85, "icon": "fas fa-shield-alt"}
+        {"name": "MongoDB", "level": 80, "icon": "fas fa-leaf"}
       ]
     }
   },
