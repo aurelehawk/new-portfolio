@@ -66,3 +66,6 @@ coverage/
 # Fichiers de configuration personnels
 config.local.js
 settings.local.json
+
+# ⚠️ IMPORTANT : Fichier de configuration avec identifiants (NE JAMAIS COMMITER)
+config.js

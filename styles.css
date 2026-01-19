@@ -272,7 +272,8 @@ nav.active {
 }
 
 .theme-toggle,
-.print-btn {
+.print-btn,
+.admin-btn {
     background: var(--bg-secondary);
     border: 2px solid var(--border-color);
     color: var(--text-primary);
@@ -284,10 +285,12 @@ nav.active {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .theme-toggle:hover,
-.print-btn:hover {
+.print-btn:hover,
+.admin-btn:hover {
     background: var(--gradient-primary);
     color: white;
     border-color: var(--primary);
