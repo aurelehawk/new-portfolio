@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Pascal Aurèle ELOUMOU</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.2cm;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+            color: #2c3e50;
+            background: #ffffff;
+            font-size: 10pt;
+        }
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+            background: white;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+        }
+        .fullname {
+            font-size: 22pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+        .title {
+            font-size: 13pt;
+            color: #2c3e50;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+        .experience-level {
+            font-size: 10pt;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+        }
+        .contact-info {
+            font-size: 9pt;
+            color: #555;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+        .contact-info span:not(:last-child)::after {
+            content: " • ";
+            margin: 0 4px;
+        }
+        .section {
+            margin-bottom: 14px;
+            page-break-inside: avoid;
+        }
+        .section-title {
+            font-size: 12pt;
+            font-weight: 700;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            margin-top: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .summary {
+            text-align: justify;
+            font-size: 10pt;
+            line-height: 1.7;
+            color: #34495e;
+        }
+        .skill-category {
+            margin-bottom: 8px;
+        }
+        .skill-category-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 10pt;
+            margin-bottom: 3px;
+        }
+        .skill-list {
+            font-size: 9.5pt;
+            color: #34495e;
+            line-height: 1.6;
+        }
+        .job {
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+        }
+        .job-header {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+        .job-company {
+            font-weight: 500;
+            color: #34495e;
+        }
+        .job-period {
+            color: #7f8c8d;
+            font-weight: 400;
+        }
+        .job-description {
+            font-size: 9.5pt;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 6px;
+        }
+        .job-achievements {
+            margin-left: 15px;
+            margin-bottom: 5px;
+        }
+        .job-achievements li {
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+            color: #34495e;
+            line-height: 1.5;
+        }
+        .job-stack {
+            font-size: 8.5pt;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 4px;
+        }
+        .project {
+            margin-bottom: 8px;
+        }
+        .project-name {
+            font-weight: 600;
+            font-size: 10pt;
+            color: #2c3e50;
+            margin-bottom: 2px;
+        }
+        .project-description {
+            font-size: 9.5pt;
+            margin: 2px 0;
+            color: #34495e;
+        }
+        .project-tech {
+            font-size: 8.5pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .degree {
+            font-size: 9.5pt;
+            margin-bottom: 4px;
+            color: #34495e;
+        }
+        .degree-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .cert-item {
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+            color: #34495e;
+        }
+        .language-item, .skill-item {
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+            color: #34495e;
+        }
+        ul {
+            margin: 4px 0;
+            padding-left: 18px;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                padding: 0;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            .job {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="fullname">Pascal Aurèle ELOUMOU</div>
+            <div class="title">SENIOR DATA ANALYST / ANALYTICS ENGINEER (Expert GCP & Retail)</div>
+            <div class="experience-level">+10 ans d'expérience</div>
+            <div class="contact-info">
+                <span>eloumou86@gmail.com</span>
+                <span>+33 6 10 43 66 35</span>
+                <span>linkedin.com/in/aureleloumou</span>
+                <span>github.com/aurelehawk</span>
+                <span>Paris, France</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Profil Professionnel</div>
+            <div class="summary">Expert Data avec +10 ans d'expérience, spécialisé dans l'analyse de la performance business et la valorisation des données sur l'écosystème GCP (BigQuery). Fort d'une double compétence technique et métier (Retail/Logistique), j'excelle dans la construction de KPIs e-commerce, la segmentation client et la création de dashboards décisionnels (Looker / Tableau). Je transforme la donnée brute en plans d'actions concrets pour maximiser le CA et la marge.</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Compétences</div>
+            <div class="skill-category">
+                <div class="skill-category-name">Analyse & Visualisation</div>
+                <div class="skill-list">SQL Expert (BigQuery) - Window Functions, Analyse de cohortes, Optimisation • Looker & Looker Studio • Tableau • Power BI • Python (Pandas, Scikit-learn pour l'analyse statistique)</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-name">Domaines Métier</div>
+                <div class="skill-list">Analyse E-commerce (Panier moyen, Churn, Conversion) • Segmentation Client & Comportement Client • Analyse de Marge & Performance Produit • Scoring & Modèles Prédictifs</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-name">Cloud & Data Platforms</div>
+                <div class="skill-list">GCP (BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM) • Snowflake (Snowpipe, Time Travel, Zero-Copy Cloning) • AWS (S3, Lambda)</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-name">Orchestration & Engineering</div>
+                <div class="skill-list">Cloud Composer (Managed Airflow) & DAGs complexes • dbt (Data Build Tool) - Modélisation & Tests • Talend • Ingestion Batch & Streaming (SFTP, API, Kafka)</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-name">Langages & Scripting</div>
+                <div class="skill-list">SQL Expert (Window Functions, CTEs, Optimization) • Python (Pandas, Polars, Scripting) • Bash / Shell • JavaScript (Notions)</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-name">DataOps & Infrastructure</div>
+                <div class="skill-list">CI/CD (GitLab CI, GitHub Actions) • Docker & Kubernetes (K8s) • Data Quality & Observabilité • FinOps (Optimisation des coûts Cloud)</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-name">BI & Data Science</div>
+                <div class="skill-list">Power BI, Looker Studio • Dataiku DSS (Expert) • Machine Learning (Random Forest, NLP)</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Expérience Professionnelle</div>
+            
+            <div class="job">
+                <div class="job-header">Senior Data Analyst / Analytics Engineer (Mission GCP) - <span class="job-company">Carrefour Administratif France</span> <span class="job-period">(2023 – 2024)</span></div>
+                <div class="job-description">Optimisation des pipelines fiscaux critiques et automatisation des traitements financiers sur Google Cloud Platform.</div>
+                <ul class="job-achievements">
+                    <li>Collecte et structuration des données financières dans BigQuery pour fiabiliser le pilotage de la performance (CA, Marges).</li>
+                    <li>Analyse et optimisation des flux de données pour accélérer la mise à disposition des reportings aux contrôleurs de gestion (Gain de 4h à quelques minutes).</li>
+                    <li>Collaboration avec les équipes métiers pour définir les KPIs de suivi et garantir la qualité des données dans Looker Studio.</li>
+                    <li>Mise en place de monitoring, alerting et procédures de reprise automatique (Backfill) sur les flux critiques.</li>
+                </ul>
+                <div class="job-stack">Technologies: GCP (BigQuery, GCS, Composer), Python, SQL, Looker Studio, Docker, GitLab CI/CD.</div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">Analyste et Data Engineer - <span class="job-company">Manpower</span> <span class="job-period">(2024 – 2025)</span></div>
+                <div class="job-description">Migration d'une architecture Legacy vers la Modern Data Stack (Snowflake) et développement de produits de données avancés.</div>
+                <ul class="job-achievements">
+                    <li>Développement d'algorithmes de segmentation candidats (Scoring Qualitatif/Quantitatif) pour optimiser le ciblage marketing et le taux de conversion.</li>
+                    <li>Analyses prédictives pour l'ajustement des budgets et l'identification des opportunités de recrutement (Business Growth).</li>
+                    <li>Création de dashboards interactifs (Streamlit/Power BI) pour le pilotage de la performance commerciale et RH.</li>
+                    <li>Gouvernance des données : Gestion stricte des flux sensibles (RGPD, Données Bancaires & RH).</li>
+                </ul>
+                <div class="job-stack">Technologies: Python, Snowflake, SQL, dbt, Streamlit, Power BI, Alteryx.</div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">Data Analyst - <span class="job-company">Eneo The Energy of Cameroun</span> <span class="job-period">(2021 – 2023)</span></div>
+                <div class="job-description">Pilotage de la performance opérationnelle et lutte contre la fraude via l'analyse de données CRM.</div>
+                <ul class="job-achievements">
+                    <li>Analyse des données Salesforce pour corréler l'alignement des ressources RH avec la Qualité de Service (QoS).</li>
+                    <li>Détection de fraudes et réduction des pertes non-techniques via le croisement de données de comptage (Pré/Post-paiement) - Segmentation comportementale et lutte contre le churn.</li>
+                </ul>
+                <div class="job-stack">Technologies: Python, Power BI, Salesforce, SQL.</div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">Expert Data Analyst & IoT (Dataiku) - <span class="job-company">Vinci Construction / NGE</span> <span class="job-period">(2015 – 2021)</span></div>
+                <div class="job-description">Maintenance prédictive et gestion de flotte connectée (IoT) à grande échelle.</div>
+                <ul class="job-achievements">
+                    <li>Industrialisation des flux IoT (OBD, CANBUS) et données externes (Météo, SAP) via Dataiku DSS.</li>
+                    <li>Développement de modèles de Machine Learning (Random Forest) pour la maintenance prédictive des engins.</li>
+                    <li>Calcul de rentabilité en temps réel (coûts km/heure) pour le pilotage stratégique du matériel - Optimisation de la performance opérationnelle.</li>
+                </ul>
+                <div class="job-stack">Technologies: Dataiku DSS, Python, SQL, PostgreSQL, Power BI, IoT.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Projets</div>
+            <div class="project">
+                <div class="project-name">Projet FinOps Kubernetes (Airbnb Clone)</div>
+                <div class="project-description">Transformation d'une application monolithique en architecture micro-services conteneurisée. Implémentation de Kubecost et Prometheus pour le monitoring des coûts et des ressources.</div>
+                <div class="project-tech">Technologies: Kubernetes, Docker, Grafana, Kubecost.</div>
+            </div>
+            <div class="project">
+                <div class="project-name">Analyseur de Courses IA (GenAI)</div>
+                <div class="project-description">Application d'analyse vidéo en temps réel exploitant les capacités multimodales de Google Gemini 2.0 Flash.</div>
+                <div class="project-tech">Technologies: Python, Streamlit, OpenCV, Gemini API.</div>
+            </div>
+            <div class="project">
+                <div class="project-name">Dallosh Analysis (NLP Pipeline)</div>
+                <div class="project-description">Architecture orientée messages pour le traitement automatisé des réclamations clients (Analyse de sentiment).</div>
+                <div class="project-tech">Technologies: Python, RabbitMQ, Celery, Ollama (LLM local), MongoDB.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Formation</div>
+            <div class="degree"><span class="degree-title">Master 2 Data & IA</span> - HETIC Paris (2024)</div>
+            <div class="degree"><span class="degree-title">Master 1 Digital and Data Science</span> - ESLSCA Paris (2023)</div>
+            <div class="degree"><span class="degree-title">Licence Pro Transport & Logistique</span> - Université de Douala (2021)</div>
+            <div class="degree"><span class="degree-title">Licence Pro Système et Réseau</span> - Institut Africain de l'Informatique (2011)</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Certifications</div>
+            <div class="cert-item">• Dataiku MLOps Practitioner (2025)</div>
+            <div class="cert-item">• Dataiku Machine Learning Practitioner (2024)</div>
+            <div class="cert-item">• Dataiku Advanced Core Designer (2024)</div>
+            <div class="cert-item">• Dataiku Core Designer (2024)</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Langues</div>
+            <div class="language-item">• Anglais (C1 (Expérimenté))</div>
+            <div class="language-item">• Français (Langue maternelle)</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Compétences Transversales</div>
+            <div class="skill-list">Autonomie & Initiative • Vision Business / Métier • Pédagogie & Transmission • Gestion de projet Agile</div>
+        </div>
+    </div>
+</body>
+</html>
