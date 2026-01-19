@@ -232,6 +232,26 @@
             const togglePassword = document.getElementById('toggle-password');
             const passwordInput = document.getElementById('password');
             
+            // Fonction pour masquer le message d'erreur
+            const hideError = () => {
+                errorMessage.classList.remove('show');
+            };
+            
+            // Masquer l'erreur quand l'utilisateur commence à taper
+            const usernameInput = document.getElementById('username');
+            usernameInput.addEventListener('input', hideError);
+            usernameInput.addEventListener('focus', hideError);
+            passwordInput.addEventListener('input', hideError);
+            passwordInput.addEventListener('focus', hideError);
+            
+            // Masquer l'erreur quand on clique ailleurs sur la page
+            document.addEventListener('click', (e) => {
+                // Si le clic n'est pas sur le message d'erreur lui-même
+                if (!errorMessage.contains(e.target)) {
+                    hideError();
+                }
+            });
+            
             // Toggle password visibility
             togglePassword.addEventListener('click', () => {
                 const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -245,11 +265,11 @@
             form.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 
-                const username = document.getElementById('username').value;
-                const password = document.getElementById('password').value;
+                const username = usernameInput.value;
+                const password = passwordInput.value;
                 
                 // Hide error message
-                errorMessage.classList.remove('show');
+                hideError();
                 loginBtn.disabled = true;
                 loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connexion...';
                 
@@ -266,7 +286,7 @@
             });
             
             // Focus on username field
-            document.getElementById('username').focus();
+            usernameInput.focus();
         });
     </script>
 </body>
