@@ -18,7 +18,10 @@
       "en": "Business-oriented technical expert, I support data valorization from raw ingestion to AI. Specialized in designing modern ELT architectures on GCP and Snowflake, I master complex orchestration with Cloud Composer (Airflow), data transformation with dbt, and Cloud cost optimization (FinOps). My expertise also covers Batch & Streaming ingestion (SFTP, API, Kafka), DataOps with CI/CD (GitLab, GitHub Actions), and Business Intelligence (Power BI, Looker Studio). With a deep understanding of business challenges, I transform data into strategic performance levers. I am seeking CDI, consulting, or freelance opportunities to deploy innovative solutions that combine technical expertise and business impact."
     },
     "photo": "data/profile-photo-aurele.jpeg",
-    "cv_file": "cv-pascal-eloumou.pdf",
+    "cv_file": {
+      "fr": "cv-pascal-eloumou.pdf",
+      "en": "cv-pascal-eloumou-en.pdf"
+    },
     "location": {
       "fr": "Région parisienne, France",
       "en": "Paris region, France"
