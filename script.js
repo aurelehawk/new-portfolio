@@ -241,13 +241,14 @@ document.addEventListener("DOMContentLoaded", () => {
             try {
                 // Tentative de chargement : cherche d'abord dans /data/, sinon à la racine
                 let response;
+                const cacheBuster = '?v=' + Date.now();
                 try {
-                    response = await fetch('data/portfolio-data.json');
+                    response = await fetch('data/portfolio-data.json' + cacheBuster);
                     if (!response.ok) throw new Error("Not in data folder");
                 } catch (e) {
                     // Fallback: Si le dossier 'data' n'existe pas, on cherche à la racine
                     console.log("Tentative de chargement depuis la racine...");
-                    response = await fetch('portfolio-data.json');
+                    response = await fetch('portfolio-data.json' + cacheBuster);
                 }
 
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
