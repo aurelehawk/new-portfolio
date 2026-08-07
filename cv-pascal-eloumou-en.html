@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal Aurèle ELOUMOU - Analytics & Data Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* ATS-friendly: Clear hierarchy with semantic HTML */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .experience-level {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .summary {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* Skills - ATS-friendly format */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h3 {
+            font-size: 16px;
+            color: #3498db;
+            margin-bottom: 8px;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skill-category li {
+            padding: 4px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .skill-category li:before {
+            content: "▪ ";
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .job-header {
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .company {
+            font-size: 16px;
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .period {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .job-description {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .achievements {
+            margin: 10px 0;
+        }
+
+        .achievements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .achievements li {
+            padding: 5px 0 5px 20px;
+            position: relative;
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .achievements li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .stack {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-top: 8px;
+        }
+
+        .stack strong {
+            color: #2c3e50;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .project-name {
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .project-tech {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+
+        .project-tech strong {
+            color: #2c3e50;
+        }
+
+        /* Education */
+        .degree {
+            margin-bottom: 12px;
+        }
+
+        .degree-title {
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .school {
+            font-size: 14px;
+            color: #3498db;
+        }
+
+        .year {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Certifications */
+        .certifications ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .certifications li {
+            padding: 4px 0 4px 20px;
+            position: relative;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .certifications li:before {
+            content: "🏆";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Languages & Soft Skills */
+        .misc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .languages ul,
+        .soft-skills ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .languages li,
+        .soft-skills li {
+            padding: 4px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .languages li:before {
+            content: "🌐 ";
+        }
+
+        .soft-skills li:before {
+            content: "✦ ";
+            color: #3498db;
+        }
+
+        /* Print styles - Optimized for 3 pages */
+        @media print {
+            @page {
+                size: A4;
+                margin: 10mm 12mm;
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
+                font-size: 10.5px;
+                line-height: 1.4;
+                max-width: 100%;
+            }
+
+            header {
+                margin-bottom: 18px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid #2c3e50;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 6px;
+            }
+
+            .title {
+                font-size: 15px;
+                margin-bottom: 3px;
+            }
+
+            .experience-level {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .contact-info {
+                font-size: 9.5px;
+                gap: 10px;
+            }
+
+            section {
+                margin-bottom: 16px;
+                page-break-inside: avoid;
+            }
+
+            h2 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                padding-bottom: 5px;
+                border-bottom: 1.5px solid #3498db;
+            }
+
+            h3 {
+                font-size: 13px;
+                margin-bottom: 4px;
+            }
+
+            .summary {
+                font-size: 10.5px;
+                line-height: 1.5;
+            }
+
+            .skills-grid {
+                gap: 12px;
+            }
+
+            .skill-category h3 {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+
+            .skill-category li {
+                padding: 2px 0;
+                font-size: 9.5px;
+            }
+
+            .job {
+                margin-bottom: 14px;
+                page-break-inside: avoid;
+            }
+
+            .job-header {
+                margin-bottom: 6px;
+            }
+
+            .job-title {
+                font-size: 13px;
+            }
+
+            .company {
+                font-size: 12px;
+            }
+
+            .period {
+                font-size: 10px;
+            }
+
+            .job-description {
+                font-size: 10px;
+                margin: 6px 0;
+                line-height: 1.4;
+            }
+
+            .achievements {
+                margin: 6px 0;
+            }
+
+            .achievements li {
+                padding: 3px 0 3px 18px;
+                font-size: 10px;
+                line-height: 1.4;
+            }
+
+            .stack {
+                font-size: 9px;
+                margin-top: 5px;
+            }
+
+            .project {
+                margin-bottom: 10px;
+                page-break-inside: avoid;
+            }
+
+            .project-name {
+                font-size: 12px;
+            }
+
+            .project-description {
+                font-size: 10px;
+                margin: 4px 0;
+            }
+
+            .project-tech {
+                font-size: 9px;
+            }
+
+            .degree {
+                margin-bottom: 8px;
+            }
+
+            .degree-title {
+                font-size: 12px;
+            }
+
+            .school {
+                font-size: 10px;
+            }
+
+            .year {
+                font-size: 10px;
+            }
+
+            .certifications li {
+                padding: 2px 0 2px 18px;
+                font-size: 10px;
+            }
+
+            .misc-grid {
+                gap: 15px;
+            }
+
+            .languages li,
+            .soft-skills li {
+                padding: 2px 0;
+                font-size: 10px;
+            }
+
+            /* Hide ATS keywords section in print */
+            .ats-keywords {
+                display: none;
+            }
+        }
+
+        /* ATS Keywords - Hidden but readable by ATS */
+        .ats-keywords {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ATS Keywords Section (hidden but readable by ATS) -->
+    <div class="ats-keywords">
+        Keywords: Data Engineer, Analytics Engineer, Data Analyst, BigQuery, Snowflake, GCP, Google Cloud Platform,
+        Cloud Composer, Apache Airflow, dbt, Data Build Tool, Python, SQL, ETL, ELT, Data Pipeline,
+        Data Warehouse, Data Lake, Business Intelligence, BI, Power BI, Looker, Tableau,
+        Data Modeling, Data Architecture, Data Governance, GDPR, Data Quality, DataOps, FinOps,
+        CI/CD, Docker, Kubernetes, Git, GitLab, GitHub, Dataiku, Machine Learning, ML,
+        Data Science, Pandas, NumPy, Streamlit, API, REST API, Cloud Functions, Lambda,
+        PostgreSQL, MongoDB, Data Visualization, Dashboard, KPI, Reporting, Analytics,
+        Agile, Scrum, Stakeholder Management, Cross-functional Collaboration, Excel, VBA,
+        Pivot Tables, TCD, GCD, Data Analysis, Statistical Analysis, Predictive Modeling, NLP,
+        Natural Language Processing, IoT, Real-time Data, Batch Processing, Stream Processing,
+        Alteryx, Salesforce, CRM, SAP, Looker Studio, Data Apps, Sentiment Analysis
+    </div>
+
+    <header>
+        <h1>Pascal Aurèle ELOUMOU</h1>
+        <div class="title">ANALYTICS & DATA ENGINEER (GCP & SNOWFLAKE)</div>
+        <div class="experience-level">10+ years of experience</div>
+        <div class="contact-info">
+            <span>📧 <a href="mailto:eloumou86@gmail.com">eloumou86@gmail.com</a></span>
+            <span>📱 +33 6 10 43 66 35</span>
+            <span>🔗 <a href="https://linkedin.com/in/aureleloumou"
+                    target="_blank">linkedin.com/in/aureleloumou</a></span>
+            <span>💻 <a href="https://github.com/aurelehawk" target="_blank">github.com/aurelehawk</a></span>
+            <span>🌐 <a href="https://aurelehawk.github.io/new-portfolio/" target="_blank">Portfolio</a></span>
+            <span>📍 Paris, France</span>
+        </div>
+    </header>
+
+    <section id="summary">
+        <h2>PROFESSIONAL PROFILE</h2>
+        <p class="summary">
+            I design and industrialize data pipelines based on robust and scalable modern architectures.
+            Mastering complex orchestration (Airflow/Composer) and transformation (dbt), I apply DataOps
+            principles and continuous optimization (FinOps) to ensure reliability and performance at scale.
+            Business-oriented, I simplify developed solutions and support business teams in data utilization.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>TECHNICAL SKILLS</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Cloud & Data Platforms</h3>
+                <ul>
+                    <li>GCP (BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM)</li>
+                    <li>Snowflake (Snowpipe, Time Travel, Zero-Copy Cloning)</li>
+                    <li>Dataiku DSS</li>
+                    <li>AWS (S3, Lambda)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Orchestration & Engineering</h3>
+                <ul>
+                    <li>Cloud Composer (Managed Airflow) & Complex DAGs</li>
+                    <li>dbt (Data Build Tool) - Modeling & Testing</li>
+                    <li>Talend</li>
+                    <li>Batch & Streaming Ingestion (SFTP, API)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Languages & Scripting</h3>
+                <ul>
+                    <li>SQL (Window Functions, CTEs, Optimization)</li>
+                    <li>Python (Pandas, Polars, Scripting)</li>
+                    <li>Bash / Shell</li>
+                    <li>JavaScript (Basics)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>DataOps & Infrastructure</h3>
+                <ul>
+                    <li>CI/CD (GitLab CI, GitHub Actions)</li>
+                    <li>Docker</li>
+                    <li>Data Quality & Observability</li>
+                    <li>FinOps (Cloud Cost Optimization)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>BI & Data Science</h3>
+                <ul>
+                    <li>Power BI, Looker Studio</li>
+                    <li>Dataiku DSS</li>
+                    <li>Machine Learning (Random Forest, NLP)</li>
+                    <li>Excel (Pivot Tables, Advanced Functions, VBA)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Data Engineer / Data Developer</div>
+                <div class="company">BPCE SI</div>
+                <div class="period">February 2026 – Present</div>
+            </div>
+            <p class="job-description">
+                Supporting banking business lines on data usages and valorization in a decision-making environment focused on Client Knowledge (Retail/Credits/Payment Methods).
+            </p>
+            <div class="achievements">
+                <ul>
+                    <li>Designed, developed, and industrialized data pipelines (ETL/ELT) to populate decision-making Datamarts (Equinox Retail monitoring).</li>
+                    <li>Integrated complex multi-source data streams and transformed massive datasets using GCP BigQuery and Teradata.</li>
+                    <li>Orchestrated data workflows via Semarchy Studio (Stambia) and the OPC3 scheduling tool.</li>
+                    <li>Ensured data quality and secure file transfers utilizing GCL and WinSCP.</li>
+                    <li>Managed production monitoring and resolved Level 2/3 production incidents to guarantee system availability.</li>
+                    <li>Collaborated with banking business teams to gather requirements and provide functional and technical support.</li>
+                </ul>
+            </div>
+            <div class="stack">
+                <strong>Technologies:</strong> Semarchy Studio (Stambia), GCP (BigQuery), OPC3, Teradata, GCL, WinSCP, SQL, Power BI, Agile Methodologies (Scrum, Kanban).
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Data Analyst & Data Engineer</div>
+                <div class="company">Manpower</div>
+                <div class="period">November 2024 – January 2026</div>
+            </div>
+            <p class="job-description">
+                Migration from Legacy architecture to Modern Data Stack (Snowflake) and support for business teams in
+                data valorization.
+            </p>
+            <div class="achievements">
+                <ul>
+                    <li>Led migration of Alteryx ETL workflows to native Snowflake architecture (ELT), improving
+                        performance and maintainability.</li>
+                    <li>Developed interactive "DataApps" (Streamlit) and integrated NLP modules for sentiment analysis
+                        (qualitative scoring) and quantitative (NTSCORE).</li>
+                    <li>Optimized budget models and marketing targeting through predictive algorithms.</li>
+                    <li>Data Governance: Strict management of sensitive data flows (GDPR, Banking & HR Data).</li>
+                </ul>
+            </div>
+            <div class="stack">
+                <strong>Technologies:</strong> Python, Snowflake, SQL, dbt, Streamlit, Power BI, Alteryx, Excel (Pivot
+                Tables, Advanced Functions, VBA).
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Data Engineer / Data Analyst (GCP)</div>
+                <div class="company">Carrefour Administratif France</div>
+                <div class="period">September 2023 – November 2024</div>
+            </div>
+            <p class="job-description">
+                Optimization of critical tax pipelines and automation of financial processing on Google Cloud Platform.
+            </p>
+            <div class="achievements">
+                <ul>
+                    <li>Architecture & Orchestration: Pipeline automation via Cloud Composer (Airflow) and Cloud
+                        Functions for idempotent file processing.</li>
+                    <li>BigQuery Engineering: Centralization of financial data, implementation of
+                        Partitioning/Clustering strategies to reduce scan costs (FinOps).</li>
+                    <li>Productivity gain: Reduced processing time from 4 hours to a few minutes through automation of
+                        manual tasks.</li>
+                    <li>Implemented monitoring, alerting, and automatic recovery procedures (Backfill) on critical
+                        flows.</li>
+                    <li>Infrastructure as Code: Use of Terraform for automatic, modular, and reusable deployment in GCP. Granular IAM access management at the datasets level.</li>
+                </ul>
+            </div>
+            <div class="stack">
+                <strong>Technologies:</strong> GCP (BigQuery, GCS, Composer), Terraform, Python, SQL, Looker Studio, Docker, GitLab
+                CI/CD.
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Data Analyst</div>
+                <div class="company">Eneo The Energy of Cameroon</div>
+                <div class="period">September 2021 – July 2023</div>
+            </div>
+            <p class="job-description">
+                Managed a Data & Reporting team for operational performance management and fraud prevention through CRM data analysis.
+            </p>
+            <div class="achievements">
+                <ul>
+                    <li>Analyzed Salesforce data to correlate HR resource alignment with Quality of Service (QoS).</li>
+                    <li>Fraud detection and reduction of non-technical losses through cross-referencing metering data
+                        (Pre/Post-payment).</li>
+                    <li>Implemented interactive dashboards for tracking performance indicators (KPIs).</li>
+                    <li>Reporting and communication of results to stakeholders through weekly presentations.</li>
+                </ul>
+            </div>
+            <div class="stack">
+                <strong>Technologies:</strong> Python, Power BI, Salesforce, SQL, Excel.
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Data Analyst & Equipment Management</div>
+                <div class="company">NGE</div>
+                <div class="period">August 2019 – July 2021</div>
+            </div>
+            <p class="job-description">
+                Support for equipment engineering and logistics teams in data valorization for the Nachtigal
+                hydroelectric dam construction project, equipment budget and lease management.
+            </p>
+            <div class="achievements">
+                <ul>
+                    <li>Defined maintenance budget and tracked expenses.</li>
+                    <li>Optimized spare parts inventory and reduced maintenance costs.</li>
+                    <li>Implemented a DataApp for equipment management.</li>
+                    <li>Reporting and sharing of critical results to stakeholders through weekly presentations.</li>
+                </ul>
+            </div>
+            <div class="stack">
+                <strong>Technologies:</strong> Python, SQL, PostgreSQL, Power BI, Excel.
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Data Analyst & IoT (Dataiku)</div>
+                <div class="company">Vinci Construction</div>
+                <div class="period">July 2015 – July 2019</div>
+            </div>
+            <p class="job-description">
+                Predictive maintenance and large-scale connected fleet management (IoT).
+            </p>
+            <div class="achievements">
+                <ul>
+                    <li>Industrialized IoT flows (OBD, CANBUS) and external data (Weather, SAP) via Dataiku DSS.</li>
+                    <li>Built and fed data models for predictive maintenance of equipment.</li>
+                    <li>Reporting and sharing of critical results to stakeholders through weekly presentations.</li>
+                </ul>
+            </div>
+            <div class="stack">
+                <strong>Technologies:</strong> Dataiku DSS, Python, SQL, PostgreSQL, Power BI, IoT, Excel (Pivot Tables,
+                Advanced Functions, VBA).
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>PERSONAL PROJECTS</h2>
+
+        <div class="project">
+            <div class="project-name">FinOps Kubernetes Project (Airbnb Clone)</div>
+            <p class="project-description">
+                Transformation of a monolithic application into a containerized micro-services architecture.
+                Implementation of Kubecost and Prometheus for cost and resource monitoring.
+            </p>
+            <div class="project-tech">
+                <strong>Technologies:</strong> Kubernetes, Docker, Grafana, Kubecost.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-name">AI Race Analyzer (GenAI)</div>
+            <p class="project-description">
+                Real-time video analysis application leveraging Google Gemini 2.0 Flash multimodal capabilities.
+            </p>
+            <div class="project-tech">
+                <strong>Technologies:</strong> Python, Streamlit, OpenCV, Gemini API.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-name">Dallosh Analysis (NLP Pipeline)</div>
+            <p class="project-description">
+                Message-oriented architecture for automated customer complaint processing: AI Customer Service Agent
+                (Sentiment analysis and response suggestions, then escalation to human agent if necessary).
+            </p>
+            <div class="project-tech">
+                <strong>Technologies:</strong> Python, RabbitMQ, Celery, Ollama (Local LLM), MongoDB.
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>EDUCATION</h2>
+
+        <div class="degree">
+            <div class="degree-title">Master 2 Data & AI</div>
+            <div class="school">HETIC Paris</div>
+            <div class="year">2024-2025</div>
+        </div>
+
+        <div class="degree">
+            <div class="degree-title">Master 1 Digital and Data Science</div>
+            <div class="school">ESLSCA Paris</div>
+            <div class="year">2023-2024</div>
+        </div>
+
+        <div class="degree">
+            <div class="degree-title">Professional Bachelor's Degree in Transport and Customs Procedures</div>
+            <div class="school">University of Douala</div>
+            <div class="year">2020-2021</div>
+        </div>
+
+        <div class="degree">
+            <div class="degree-title">Professional Bachelor's Degree in Systems and Networks</div>
+            <div class="school">African Institute of Computer Science</div>
+            <div class="year">2010-2011</div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>CERTIFICATIONS</h2>
+        <div class="certifications">
+            <ul>
+                <li>Dataiku MLOps Practitioner (2025)</li>
+                <li>Dataiku Machine Learning Practitioner (2024)</li>
+                <li>Dataiku Advanced Core Designer (2024)</li>
+                <li>Dataiku Core Designer (2024)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="misc">
+        <h2>LANGUAGES & SOFT SKILLS</h2>
+        <div class="misc-grid">
+            <div class="languages">
+                <h3>Languages</h3>
+                <ul>
+                    <li>English - C1 (Proficient)</li>
+                    <li>French - Native</li>
+                </ul>
+            </div>
+
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Autonomy & Initiative</li>
+                    <li>Business Vision</li>
+                    <li>Teaching & Knowledge Transfer</li>
+                    <li>Agile Project Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

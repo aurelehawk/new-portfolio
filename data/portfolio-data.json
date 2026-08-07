@@ -34,13 +34,60 @@
   },
   "experiences": [
     {
+      "id": "exp_new",
+      "company": "BPCE SI",
+      "position": {
+        "fr": "Développeur Data Engineer",
+        "en": "Data Engineer / Data Developer"
+      },
+      "period": "Fév 2026 - Présent",
+      "location": {
+        "fr": "Région parisienne, France",
+        "en": "Paris region, France"
+      },
+      "type": {
+        "fr": "Mission",
+        "en": "Contract"
+      },
+      "sections": {
+        "context": {
+          "fr": "Accompagnement des métiers bancaires sur les usages data et la valorisation des données dans un environnement décisionnel orienté Connaissance Client (Retail/Crédits/Moyens de paiement).",
+          "en": "Supporting banking business lines on data usages and valorization in a decision-making environment focused on Client Knowledge (Retail/Credits/Payment Methods)."
+        },
+        "missions": {
+          "fr": "Conception, développement et industrialisation de pipelines de données (ETL/ELT) pour l'alimentation des datamarts décisionnels (pilotage du pôle Equinox Retail). Intégration de flux multi-sources complexes (GCP BigQuery, Teradata).",
+          "en": "Design, development, and industrialization of data pipelines (ETL/ELT) to populate decision-making Datamarts (Equinox Retail monitoring). Integration of complex multi-source data streams (GCP BigQuery, Teradata)."
+        },
+        "projects": {
+          "fr": "Orchestration des traitements de données via Semarchy Studio (Stambia) et OPC3. Garantie de la qualité des données et sécurisation des transferts via GCL et WinSCP.",
+          "en": "Orchestration of data workflows using Semarchy Studio (Stambia) and OPC3. Ensuring data quality and secure file transfers with GCL and WinSCP."
+        },
+        "results": {
+          "fr": "Pilotage du suivi de production et résolution d'incidents (N2/N3) pour assurer la continuité opérationnelle du SI. Collaboration étroite avec les métiers.",
+          "en": "Production monitoring and Level 2/3 incident resolution to guarantee system availability. Close collaboration with banking business teams."
+        }
+      },
+      "stack": [
+        "Semarchy",
+        "GCP",
+        "BigQuery",
+        "Teradata",
+        "OPC3",
+        "GCL",
+        "WinSCP",
+        "SQL",
+        "Power BI",
+        "Agile"
+      ]
+    },
+    {
       "id": "exp_1",
       "company": "Manpower",
       "position": {
         "fr": "Data Engineer / Data Analyst",
         "en": "Data Engineer / Data Analyst"
       },
-      "period": "Nov 2024 - Présent",
+      "period": "Nov 2024 - Janv 2026",
       "location": {
         "fr": "Région parisienne, France",
         "en": "Paris region, France"
@@ -63,11 +110,20 @@
           "en": "Automation of sensitive data flows via SFTP connection and Python/SQL scripts. Implementation of predictive models (Random Forest, Gradient Boosting) for marketing targeting and budget optimization. Creation of Power BI dashboards for HR KPI monitoring and employee data control."
         },
         "results": {
-          "fr": "Réduction de 50% des malus liés aux fraudes. Optimisation des KPI RH pour les workflows d'embauche. Analyse temporelle des KPI agence avec recommandations automatiques.",
+          "fr": "Réduction de 50% des malus liés aux fraudes. Optimisation des KPI RH pour les workflows d'embauche. Analyse temporelle des KPI agence avec recommendations automatiques.",
           "en": "50% reduction in fraud-related penalties. Optimization of HR KPIs for hiring workflows. Temporal analysis of agency KPIs with automated recommendations."
         }
       },
-      "stack": ["Python", "Snowflake", "SQL", "dbt", "Streamlit", "Power BI", "Alteryx"]
+      "stack": [
+        "Python",
+        "Snowflake",
+        "SQL",
+        "dbt",
+        "Streamlit",
+        "Power BI",
+        "Alteryx",
+        "Excel"
+      ]
     },
     {
       "id": "exp_2",
@@ -88,8 +144,8 @@
           "en": "Optimization of tax operations and eco-contribution through automation of data pipelines on GCP. Reduction of penalty risks and acceleration of processing."
         },
         "missions": {
-          "fr": "Orchestration des pipelines via Cloud Functions et Airflow (Google Composer) pour contourner la latence SAP. Développement d'automates de traitement de fichiers Excel massifs. Recherche de grains pour identifier uniquement les champs utiles aux requêtes métier.",
-          "en": "Orchestration of pipelines via Cloud Functions and Airflow (Google Composer) to bypass SAP latency. Development of automations for processing massive Excel files. Grain research to identify only useful fields for business queries."
+          "fr": "Orchestration des pipelines via Cloud Functions et Airflow (Google Composer) pour contourner la latence SAP. Développement d'automates de traitement de fichiers Excel massifs. Recherche de grains pour identifier uniquement les champs utiles aux requêtes métier. Utilisation de Terraform pour l'infrastructure as code (IaC) de déploiement automatique, modulaire et réutilisable dans GCP. Gestion granulaire des accès IAM au niveau des datasets.",
+          "en": "Orchestration of pipelines via Cloud Functions and Airflow (Google Composer) to bypass SAP latency. Development of automations for processing massive Excel files. Grain research to identify only useful fields for business queries. Use of Terraform for infrastructure as code (IaC) enabling automatic, modular, and reusable deployment in GCP. Granular IAM access management at the datasets level."
         },
         "projects": {
           "fr": "Centralisation des données dans BigQuery avec intégration de requêtes SQL avancées. Création de dashboards dynamiques sur Looker Studio pour le suivi fiscal et les KPI opérationnels. Mise en place de monitoring et alerting automatique sur les flux critiques.",
@@ -100,7 +156,18 @@
           "en": "Major productivity gain: processing equivalent to 6 people/6 days reduced to 4 hours of automated processing. Significant reduction in eco-contribution penalty risks."
         }
       },
-      "stack": ["GCP", "BigQuery", "GCS", "Cloud Composer", "Python", "SQL", "Looker Studio", "Docker", "GitLab CI/CD"]
+      "stack": [
+        "GCP",
+        "BigQuery",
+        "GCS",
+        "Cloud Composer",
+        "Terraform",
+        "Python",
+        "SQL",
+        "Looker Studio",
+        "Docker",
+        "GitLab CI/CD"
+      ]
     },
     {
       "id": "exp_3",
@@ -133,7 +200,13 @@
           "en": "Significant improvement in service quality. Reduction of non-technical losses. Optimization of prepayment/postpayment economic model."
         }
       },
-      "stack": ["Python", "Power BI", "Salesforce", "SQL"]
+      "stack": [
+        "Python",
+        "Power BI",
+        "Salesforce",
+        "SQL",
+        "Excel"
+      ]
     },
     {
       "id": "exp_4",
@@ -166,7 +239,15 @@
           "en": "Equipment availability: 81-92% in 6 months. Reduction of breakdown detection time from 5 to 1 day. 12 breakdowns avoided monthly. Reduction of lost hours from 240 to 80 per month."
         }
       },
-      "stack": ["Dataiku DSS", "Python", "SQL", "PostgreSQL", "Power BI", "IoT"]
+      "stack": [
+        "Dataiku DSS",
+        "Python",
+        "SQL",
+        "PostgreSQL",
+        "Power BI",
+        "IoT",
+        "Excel"
+      ]
     },
     {
       "id": "exp_5",
@@ -199,7 +280,13 @@
           "en": "Robust and high-performance infrastructure. Responsive and efficient support."
         }
       },
-      "stack": ["Helpdesk", "Network", "Fiber Optic", "Hardware", "Windows Server"]
+      "stack": [
+        "Helpdesk",
+        "Network",
+        "Fiber Optic",
+        "Hardware",
+        "Windows Server"
+      ]
     }
   ],
   "education": [
@@ -279,9 +366,33 @@
         "en": "Cloud & Data Platforms"
       },
       "items": [
-        {"name": "GCP", "level": 90, "icon": "fab fa-google", "details": {"fr": "BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM", "en": "BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM"}},
-        {"name": "Snowflake", "level": 95, "icon": "fas fa-snowflake", "details": {"fr": "Snowpipe, Time Travel, Zero-Copy Cloning, Data Warehouse", "en": "Snowpipe, Time Travel, Zero-Copy Cloning, Data Warehouse"}},
-        {"name": "AWS", "level": 75, "icon": "fab fa-aws", "details": {"fr": "S3, Lambda", "en": "S3, Lambda"}}
+        {
+          "name": "GCP",
+          "level": 90,
+          "icon": "fab fa-google",
+          "details": {
+            "fr": "BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM",
+            "en": "BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM"
+          }
+        },
+        {
+          "name": "Snowflake",
+          "level": 95,
+          "icon": "fas fa-snowflake",
+          "details": {
+            "fr": "Snowpipe, Time Travel, Zero-Copy Cloning, Data Warehouse",
+            "en": "Snowpipe, Time Travel, Zero-Copy Cloning, Data Warehouse"
+          }
+        },
+        {
+          "name": "AWS",
+          "level": 75,
+          "icon": "fab fa-aws",
+          "details": {
+            "fr": "S3, Lambda",
+            "en": "S3, Lambda"
+          }
+        }
       ]
     },
     "orchestration": {
@@ -290,11 +401,51 @@
         "en": "Orchestration & Engineering"
       },
       "items": [
-        {"name": "Cloud Composer", "level": 90, "icon": "fas fa-wind", "details": {"fr": "Managed Airflow & DAGs complexes", "en": "Managed Airflow & complex DAGs"}},
-        {"name": "dbt", "level": 85, "icon": "fas fa-database", "details": {"fr": "Data Build Tool - Modélisation & Tests", "en": "Data Build Tool - Modeling & Tests"}},
-        {"name": "Talend", "level": 80, "icon": "fas fa-project-diagram", "details": {"fr": "ETL/ELT workflows", "en": "ETL/ELT workflows"}},
-        {"name": "Airflow", "level": 85, "icon": "fas fa-wind", "details": {"fr": "Orchestration de pipelines ETL/ELT", "en": "ETL/ELT pipeline orchestration"}},
-        {"name": "Ingestion", "level": 90, "icon": "fas fa-exchange-alt", "details": {"fr": "Batch & Streaming (SFTP, API, Kafka)", "en": "Batch & Streaming (SFTP, API, Kafka)"}}
+        {
+          "name": "Cloud Composer",
+          "level": 90,
+          "icon": "fas fa-wind",
+          "details": {
+            "fr": "Managed Airflow & DAGs complexes",
+            "en": "Managed Airflow & complex DAGs"
+          }
+        },
+        {
+          "name": "dbt",
+          "level": 85,
+          "icon": "fas fa-database",
+          "details": {
+            "fr": "Data Build Tool - Modélisation & Tests",
+            "en": "Data Build Tool - Modeling & Tests"
+          }
+        },
+        {
+          "name": "Talend",
+          "level": 80,
+          "icon": "fas fa-project-diagram",
+          "details": {
+            "fr": "ETL/ELT workflows",
+            "en": "ETL/ELT workflows"
+          }
+        },
+        {
+          "name": "Airflow",
+          "level": 85,
+          "icon": "fas fa-wind",
+          "details": {
+            "fr": "Orchestration de pipelines ETL/ELT",
+            "en": "ETL/ELT pipeline orchestration"
+          }
+        },
+        {
+          "name": "Ingestion",
+          "level": 90,
+          "icon": "fas fa-exchange-alt",
+          "details": {
+            "fr": "Batch & Streaming (SFTP, API, Kafka)",
+            "en": "Batch & Streaming (SFTP, API, Kafka)"
+          }
+        }
       ]
     },
     "languages": {
@@ -303,10 +454,42 @@
         "en": "Languages & Scripting"
       },
       "items": [
-        {"name": "SQL", "level": 95, "icon": "fas fa-database", "details": {"fr": "Expert (Window Functions, CTEs, Optimization)", "en": "Expert (Window Functions, CTEs, Optimization)"}},
-        {"name": "Python", "level": 95, "icon": "fab fa-python", "details": {"fr": "Pandas, Polars, Scripting, Celery, Streamlit", "en": "Pandas, Polars, Scripting, Celery, Streamlit"}},
-        {"name": "Bash / Shell", "level": 85, "icon": "fas fa-terminal", "details": {"fr": "Scripting système et automatisation", "en": "System scripting and automation"}},
-        {"name": "JavaScript", "level": 75, "icon": "fab fa-js", "details": {"fr": "Notions", "en": "Basics"}}
+        {
+          "name": "SQL",
+          "level": 95,
+          "icon": "fas fa-database",
+          "details": {
+            "fr": "Expert (Window Functions, CTEs, Optimization)",
+            "en": "Expert (Window Functions, CTEs, Optimization)"
+          }
+        },
+        {
+          "name": "Python",
+          "level": 95,
+          "icon": "fab fa-python",
+          "details": {
+            "fr": "Pandas, Polars, Scripting, Celery, Streamlit",
+            "en": "Pandas, Polars, Scripting, Celery, Streamlit"
+          }
+        },
+        {
+          "name": "Bash / Shell",
+          "level": 85,
+          "icon": "fas fa-terminal",
+          "details": {
+            "fr": "Scripting système et automatisation",
+            "en": "System scripting and automation"
+          }
+        },
+        {
+          "name": "JavaScript",
+          "level": 75,
+          "icon": "fab fa-js",
+          "details": {
+            "fr": "Notions",
+            "en": "Basics"
+          }
+        }
       ]
     },
     "dataops": {
@@ -315,10 +498,51 @@
         "en": "DataOps & Infrastructure"
       },
       "items": [
-        {"name": "CI/CD", "level": 85, "icon": "fab fa-gitlab", "details": {"fr": "GitLab CI, GitHub Actions", "en": "GitLab CI, GitHub Actions"}},
-        {"name": "Docker & Kubernetes", "level": 85, "icon": "fab fa-docker", "details": {"fr": "Containerisation et orchestration K8s", "en": "Containerization and K8s orchestration"}},
-        {"name": "Data Quality", "level": 85, "icon": "fas fa-shield-alt", "details": {"fr": "Observabilité et qualité des données", "en": "Data observability and quality"}},
-        {"name": "FinOps", "level": 85, "icon": "fas fa-chart-line", "details": {"fr": "Optimisation des coûts Cloud", "en": "Cloud cost optimization"}}
+        {
+          "name": "Terraform",
+          "level": 85,
+          "icon": "fas fa-cubes",
+          "details": {
+            "fr": "Infrastructure as Code (IaC)",
+            "en": "Infrastructure as Code (IaC)"
+          }
+        },
+        {
+          "name": "CI/CD",
+          "level": 85,
+          "icon": "fab fa-gitlab",
+          "details": {
+            "fr": "GitLab CI, GitHub Actions",
+            "en": "GitLab CI, GitHub Actions"
+          }
+        },
+        {
+          "name": "Docker & Kubernetes",
+          "level": 85,
+          "icon": "fab fa-docker",
+          "details": {
+            "fr": "Containerisation et orchestration K8s",
+            "en": "Containerization and K8s orchestration"
+          }
+        },
+        {
+          "name": "Data Quality",
+          "level": 85,
+          "icon": "fas fa-shield-alt",
+          "details": {
+            "fr": "Observabilité et qualité des données",
+            "en": "Data observability and quality"
+          }
+        },
+        {
+          "name": "FinOps",
+          "level": 85,
+          "icon": "fas fa-chart-line",
+          "details": {
+            "fr": "Optimisation des coûts Cloud",
+            "en": "Cloud cost optimization"
+          }
+        }
       ]
     },
     "bi_datascience": {
@@ -327,10 +551,42 @@
         "en": "BI & Data Science"
       },
       "items": [
-        {"name": "Power BI", "level": 90, "icon": "fas fa-chart-bar", "details": {"fr": "Desktop, Server, Cloud, DAX/M", "en": "Desktop, Server, Cloud, DAX/M"}},
-        {"name": "Looker Studio", "level": 85, "icon": "fas fa-chart-line", "details": {"fr": "Dashboards dynamiques et KPI", "en": "Dynamic dashboards and KPIs"}},
-        {"name": "Dataiku DSS", "level": 95, "icon": "fas fa-cogs", "details": {"fr": "Expert - 4 certifications", "en": "Expert - 4 certifications"}},
-        {"name": "Machine Learning", "level": 90, "icon": "fas fa-brain", "details": {"fr": "Random Forest, NLP", "en": "Random Forest, NLP"}}
+        {
+          "name": "Power BI",
+          "level": 90,
+          "icon": "fas fa-chart-bar",
+          "details": {
+            "fr": "Desktop, Server, Cloud, DAX/M",
+            "en": "Desktop, Server, Cloud, DAX/M"
+          }
+        },
+        {
+          "name": "Looker Studio",
+          "level": 85,
+          "icon": "fas fa-chart-line",
+          "details": {
+            "fr": "Dashboards dynamiques et KPI",
+            "en": "Dynamic dashboards and KPIs"
+          }
+        },
+        {
+          "name": "Dataiku DSS",
+          "level": 95,
+          "icon": "fas fa-cogs",
+          "details": {
+            "fr": "Expert - 4 certifications",
+            "en": "Expert - 4 certifications"
+          }
+        },
+        {
+          "name": "Machine Learning",
+          "level": 90,
+          "icon": "fas fa-brain",
+          "details": {
+            "fr": "Random Forest, NLP",
+            "en": "Random Forest, NLP"
+          }
+        }
       ]
     },
     "databases": {
@@ -339,10 +595,70 @@
         "en": "Databases"
       },
       "items": [
-        {"name": "Snowflake", "level": 95, "icon": "fas fa-snowflake"},
-        {"name": "BigQuery", "level": 90, "icon": "fab fa-google"},
-        {"name": "PostgreSQL", "level": 85, "icon": "fas fa-database"},
-        {"name": "MongoDB", "level": 80, "icon": "fas fa-leaf"}
+        {
+          "name": "Snowflake",
+          "level": 95,
+          "icon": "fas fa-snowflake"
+        },
+        {
+          "name": "BigQuery",
+          "level": 90,
+          "icon": "fab fa-google"
+        },
+        {
+          "name": "PostgreSQL",
+          "level": 85,
+          "icon": "fas fa-database"
+        },
+        {
+          "name": "MongoDB",
+          "level": 80,
+          "icon": "fas fa-leaf"
+        }
+      ]
+    },
+    "digital_transformation": {
+      "title": {
+        "fr": "Transformation Digitale",
+        "en": "Digital Transformation"
+      },
+      "items": [
+        {
+          "name": "Prompt Engineering",
+          "level": 90,
+          "icon": "fas fa-robot",
+          "details": {
+            "fr": "Optimisation des interactions avec les LLMs",
+            "en": "Optimization of LLM interactions"
+          }
+        },
+        {
+          "name": "DataApps IA intégrée",
+          "level": 90,
+          "icon": "fas fa-laptop-code",
+          "details": {
+            "fr": "Développement d'applications métier infusées à l'IA",
+            "en": "Development of AI-infused business applications"
+          }
+        },
+        {
+          "name": "Veille Techno",
+          "level": 95,
+          "icon": "fas fa-lightbulb",
+          "details": {
+            "fr": "Suivi continu des innovations tech et IA",
+            "en": "Continuous monitoring of tech and AI innovations"
+          }
+        },
+        {
+          "name": "Accompagnement & Vulgarisation IA",
+          "level": 90,
+          "icon": "fas fa-chalkboard-teacher",
+          "details": {
+            "fr": "Formation des utilisateurs sur les outils IA",
+            "en": "User training on AI tools"
+          }
+        }
       ]
     }
   },
@@ -358,8 +674,8 @@
         "en": "Automated sentiment analysis platform for Telecoms"
       },
       "description": {
-        "fr": "Plateforme complète d'analyse de données conçue pour automatiser le traitement des réclamations clients (Twitter/CSV). L'application utilise une architecture microservices avec RabbitMQ pour nettoyer les données, analyser les sentiments via LLM (Ollama) et visualiser les KPI en temps réel. Dashboard avec gestion des rôles (Admin/Analyste) et traitement automatisé de datasets massifs.",
-        "en": "Complete data analysis platform designed to automate customer complaint processing (Twitter/CSV). The application uses a microservices architecture with RabbitMQ to clean data, analyze sentiment via LLM (Ollama), and visualize KPIs in real-time. Dashboard with role management (Admin/Analyst) and automated processing of massive datasets."
+        "fr": "Architecture orientée messages pour le traitement automatisé des réclamations clients : Agent IA SAV (Analyse de sentiment et proposition de réponses puis escalade vers un agent humain si nécessaire). L'application utilise une architecture microservices avec RabbitMQ pour nettoyer les données, analyser les sentiments via LLM (Ollama) et visualiser les KPI en temps réel.",
+        "en": "Message-oriented architecture for automated customer complaint processing: AI Customer Service Agent (Sentiment analysis and response suggestions, then escalation to human agent if necessary). The application uses a microservices architecture with RabbitMQ to clean data, analyze sentiment via LLM (Ollama), and visualize KPIs in real-time."
       },
       "role": {
         "fr": "Fullstack Data Engineer & Architect",

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Joel SOBGUI - AI Engineer Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.25;
+            color: #1a202c;
+            background-color: #f3f4f6;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 7mm 15mm;
+            margin: 10px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden; 
+        }
+
+        @media print {
+            @page { size: A4; margin: 0; }
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; width: 100%; height: 100%; }
+            .no-print { display: none; }
+            a { text-decoration: none; color: inherit; }
+        }
+
+        h1 { font-size: 22pt; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: #111827; margin-bottom: 2px; }
+        
+        section {
+            margin-top: 0.65rem; 
+        }
+
+        h2 { 
+            font-size: 10.5pt; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            border-bottom: 1.5px solid #334155; 
+            margin-bottom: 0.25rem;
+            color: #1e293b;
+            letter-spacing: 0.04em;
+            padding-bottom: 1px;
+        }
+        h3 { font-size: 10pt; font-weight: 700; color: #1e293b; }
+        
+        .contact-info { font-size: 9pt; color: #475569; line-height: 1.4; }
+        .contact-info a { color: #1d4ed8; text-decoration: none; }
+        
+        .date { font-weight: 600; color: #475569; font-size: 9pt; }
+        .location-text { color: #64748b; font-size: 9pt; font-style: italic; }
+        
+        .mission-list {
+            list-style-type: disc !important;
+            padding-left: 1.1rem !important;
+            margin-top: 0.1rem !important;
+        }
+        .mission-list li {
+            margin-bottom: 0.08rem;
+            font-size: 9.5pt; 
+            color: #334155;
+        }
+        
+        .skill-list-bullets {
+            list-style-type: disc;
+            padding-left: 1.1rem;
+        }
+        .skill-list-bullets li {
+            font-size: 9.2pt;
+            margin-bottom: 0.04rem;
+            color: #334155;
+        }
+        .skill-category { font-weight: 700; color: #111827; }
+    </style>
+</head>
+<body>
+
+    <div class="no-print text-center py-2 bg-gray-800 text-white text-sm">
+        <p>1-Page Layout Optimized: Concise missions and refined spacing. Press <b>Ctrl+P / Cmd+P</b> to export.</p>
+    </div>
+
+    <main class="page">
+        <!-- HEADER - Centered Layout -->
+        <header class="text-center pb-1 border-b border-gray-100">
+            <h1>Ivan Joel SOBGUI</h1>
+            <p class="text-lg font-bold text-blue-700 uppercase tracking-tight mb-1">AI Engineer | Fullstack Developer</p>
+            <div class="contact-info">
+                <p>
+                    +33 7 45 62 66 22 | 
+                    <a href="mailto:i.sobgui@hetic.eu">i.sobgui@hetic.eu</a> | 
+                    Paris, Ile-de-France, 75017, France
+                </p>
+                <p>
+                    <a href="https://linkedin.com/in/sobgui-ivan-joel" target="_blank">linkedin.com/in/sobgui-ivan-joel</a>
+                </p>
+            </div>
+        </header>
+
+        <!-- PROFILE -->
+        <section style="margin-top: 0.45rem;">
+            <h2>Profile</h2>
+            <p class="text-[9.5pt] text-gray-700 leading-normal">
+                Results-oriented AI Engineer with 3+ years' experience in architecting Neural Networks and RAG pipelines and building REST APIs for microservices. Expert in scalable APIs and MLOps workflows that drive 30% efficiency gains with GDPR-compliant data processing and model deployment.
+            </p>
+        </section>
+
+        <!-- WORK EXPERIENCE -->
+        <section>
+            <h2>Work Experience</h2>
+            
+            <div class="mb-2">
+                <div class="flex justify-between items-baseline">
+                    <h3>AI Engineer (Fullstack) | IAUTEC</h3>
+                    <span class="date">06/2024 - 10/2024</span>
+                </div>
+                <div class="location-text">Paris, France</div>
+                <ul class="mission-list">
+                    <li><strong>RAG Pipeline:</strong> Architected a RAG pipeline (Qwen 3, ChromaDB) enabling semantic search across 10,000+ documents.</li>
+                    <li><strong>LLM Integration:</strong> Built a Next.js chatbot boosting user engagement by 25% within two months.</li>
+                    <li><strong>Data Engineering:</strong> Automated CSV cleaning with Pandas, reducing manual structuring effort by 30%.</li>
+                    <li><strong>Analytics:</strong> Implemented Power BI dashboards for real-time KPI monitoring and strategic decision-making.</li>
+                </ul>
+            </div>
+
+            <div class="mb-2">
+                <div class="flex justify-between items-baseline">
+                    <h3>Full-Stack Developer | DeepSquare</h3>
+                    <span class="date">03/2023 - 08/2023</span>
+                </div>
+                <div class="location-text">Sfax, Tunisia</div>
+                <ul class="mission-list">
+                    <li><strong>NLP Backend:</strong> Built an Express.js NLP chatbot, optimizing customer response times by 45%.</li>
+                    <li><strong>Frontend:</strong> Refined CMS UI with JavaScript, improving accessibility and Web Vital scores by 20%.</li>
+                    <li><strong>Visualization:</strong> Expanded interactive dashboards to support complex stakeholder decision-making.</li>
+                </ul>
+            </div>
+
+            <div class="mb-0">
+                <div class="flex justify-between items-baseline">
+                    <h3>IoT Developer | EPM Tunis</h3>
+                    <span class="date">03/2021 - 06/2021</span>
+                </div>
+                <div class="location-text">Tunis, Tunisia</div>
+                <ul class="mission-list">
+                    <li><strong>Robotics:</strong> Built a Kotlin Android app for robot control, improving motion precision by 15%.</li>
+                    <li><strong>Embedded AI:</strong> Integrated ultrasonic avoidance (C++/Arduino), reducing test collision rates by 40%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            <div class="space-y-1">
+                <div>
+                    <div class="flex justify-between items-baseline">
+                        <p class="text-[9.5pt]"><strong>Master in Data & Artificial Intelligence</strong> | HETIC School</p>
+                        <span class="date">09/2023 - 06/2025</span>
+                    </div>
+                    <p class="text-[8.5pt] text-gray-600 italic">Paris, France</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline">
+                        <p class="text-[9.5pt]"><strong>Master in Software Engineering</strong> | ESPITA University</p>
+                        <span class="date">09/2021 - 06/2023</span>
+                    </div>
+                    <p class="text-[8.5pt] text-gray-600 italic">Sousse, Tunisia</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline">
+                        <p class="text-[9.5pt]"><strong>Bachelor in Electrical Engineering</strong> | EPM University</p>
+                        <span class="date">09/2020 - 06/2021</span>
+                    </div>
+                    <p class="text-[8.5pt] text-gray-600 italic">Tunis, Tunisia</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline">
+                        <p class="text-[9.5pt]"><strong>Bachelor in Network Engineering & Security</strong> | UPS University</p>
+                        <span class="date">09/2017 - 06/2020</span>
+                    </div>
+                    <p class="text-[8.5pt] text-gray-600 italic">Sousse, Tunisia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section>
+            <h2>Technical Skills</h2>
+            <ul class="skill-list-bullets">
+                <li><span class="skill-category">AI & ML:</span> Machine Learning, Deep Learning, Neural Networks, Transformers, LLM (Qwen, Llama, Mistral, Gemini), RAG, PyTorch, LangChain, Hugging Face, Power BI.</li>
+                <li><span class="skill-category">Backend:</span> Python (FastAPI, Django), Java (Springboot), Node.js (Nest), Go, RabbitMQ, Kafka.</li>
+                <li><span class="skill-category">Frontend:</span> Next.js, React, Vue, Angular, Flutter, Kotlin Android, Figma (UI/UX).</li>
+                <li><span class="skill-category">Cloud & DevOps:</span> Docker, Kubernetes, AWS, GCP, Azure, GIT/GitHub Actions, CI/CD, MLOps, Jira/Scrum.</li>
+                <li><span class="skill-category">Databases:</span> ChromaDB (Vector), MongoDB, PostgreSQL, Supabase, Firebase, Redis.</li>
+                <li><span class="skill-category">Projects Management & Communication:</span> Jira, Notion, Trello.</li>
+            </ul>
+        </section>
+
+        <!-- SOFT SKILLS -->
+        <section>
+            <h2>Soft Skills</h2>
+            <p class="text-[9.2pt] text-gray-700">Crisis Management, Leadership, Creative, Good Communication, Autonomy, Adaptability, SOLID/DRY Principles.</p>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section style="margin-top: 0.55rem;">
+            <h2>Languages</h2>
+            <p class="text-[9.2pt] text-gray-700"><strong>French:</strong> Native | <strong>English:</strong> B2 | <strong>German:</strong> B1 | <strong>Japanese:</strong> Amateur</p>
+        </section>
+        
+    </main>
+</body>
+</html>
