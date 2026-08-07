@@ -561,7 +561,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.preventDefault();
                 const profile = state.portfolioData.profile;
                 if (profile?.cv_file) {
-                    window.open(profile.cv_file, '_blank');
+                    const cvPath = typeof profile.cv_file === 'object' 
+                        ? (profile.cv_file[state.currentLang] || profile.cv_file['fr']) 
+                        : profile.cv_file;
+                    window.open(cvPath, '_blank');
                 } else {
                     alert("CV non disponible pour le moment");
                 }
