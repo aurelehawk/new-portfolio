@@ -21,15 +21,17 @@
         <skill_category name="Cloud &amp; Data Platforms">
             <skill>GCP (BigQuery, GCS, Cloud Functions, Dataflow, Pub/Sub, IAM)</skill>
             <skill>Snowflake (Snowpipe, Time Travel, Zero-Copy Cloning)</skill>
+            <skill>Teradata (Data Warehouse, requêtes SQL complexes, Indexation)</skill>
             <skill>Dataiku DSS</skill>
             <skill>AWS (S3, Lambda)</skill>
         </skill_category>
         
         <skill_category name="Orchestration &amp; Engineering">
             <skill>Cloud Composer (Managed Airflow) &amp; DAGs complexes</skill>
+            <skill>Orchestration &amp; Ordonnancement (OPC3, Airflow)</skill>
             <skill>dbt (Data Build Tool) - Modélisation &amp; Tests</skill>
-            <skill>Talend</skill>
-            <skill>Ingestion Batch &amp; Streaming (SFTP, API)</skill>
+            <skill>Semarchy Studio (Stambia) &amp; Talend</skill>
+            <skill>Ingestion Batch &amp; Ingestion Sécurisée (SFTP, GCL, WinSCP)</skill>
         </skill_category>
 
         <skill_category name="Langages &amp; Scripting">

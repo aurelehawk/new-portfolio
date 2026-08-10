@@ -395,6 +395,15 @@
             "fr": "S3, Lambda",
             "en": "S3, Lambda"
           }
+        },
+        {
+          "name": "Teradata",
+          "level": 85,
+          "icon": "fas fa-database",
+          "details": {
+            "fr": "Data Warehouse, requêtes SQL complexes et Indexation",
+            "en": "Data Warehouse, complex SQL queries and Indexing"
+          }
         }
       ]
     },
@@ -423,6 +432,24 @@
           }
         },
         {
+          "name": "Semarchy (Stambia)",
+          "level": 85,
+          "icon": "fas fa-project-diagram",
+          "details": {
+            "fr": "Développement ETL/ELT et orchestration de flux complexes",
+            "en": "ETL/ELT development and complex workflow orchestration"
+          }
+        },
+        {
+          "name": "OPC3",
+          "level": 80,
+          "icon": "fas fa-clock",
+          "details": {
+            "fr": "Ordonnancement et planification des flux de production",
+            "en": "Scheduling and planning of production workflows"
+          }
+        },
+        {
           "name": "Talend",
           "level": 80,
           "icon": "fas fa-project-diagram",
@@ -445,8 +472,8 @@
           "level": 90,
           "icon": "fas fa-exchange-alt",
           "details": {
-            "fr": "Batch & Streaming (SFTP, API, Kafka)",
-            "en": "Batch & Streaming (SFTP, API, Kafka)"
+            "fr": "Batch, Streaming & Ingestion Sécurisée (SFTP, API, Kafka, GCL, WinSCP)",
+            "en": "Batch, Streaming & Secure Ingestion (SFTP, API, Kafka, GCL, WinSCP)"
           }
         }
       ]
